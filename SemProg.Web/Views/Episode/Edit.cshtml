@@ -1,0 +1,30 @@
+﻿@model SemProg.BLL.DTOs.EpisodeDto
+@{
+    ViewData["Title"] = "Izmeni epizodu";
+}
+<h2>Izmeni epizodu</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label>Naslov</label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Opis</label>
+        <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Datum premijere</label>
+        <input asp-for="ReleaseDate" type="date" class="form-control" />
+        <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-primary">Sačuvaj izmene</button>
+    <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+</form>

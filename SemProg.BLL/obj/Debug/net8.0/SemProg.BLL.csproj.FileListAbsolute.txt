@@ -1,0 +1,15 @@
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\bin\Debug\net8.0\SemProg.BLL.deps.json
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\bin\Debug\net8.0\SemProg.BLL.dll
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\bin\Debug\net8.0\SemProg.BLL.pdb
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\bin\Debug\net8.0\SemProg.DAL.dll
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\bin\Debug\net8.0\SemProg.DAL.pdb
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\obj\Debug\net8.0\SemProg.BLL.csproj.AssemblyReference.cache
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\obj\Debug\net8.0\SemProg.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\obj\Debug\net8.0\SemProg.BLL.AssemblyInfoInputs.cache
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\obj\Debug\net8.0\SemProg.BLL.AssemblyInfo.cs
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\obj\Debug\net8.0\SemProg.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\obj\Debug\net8.0\SemProg..5CFDAFD9.Up2Date
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\obj\Debug\net8.0\SemProg.BLL.dll
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\obj\Debug\net8.0\refint\SemProg.BLL.dll
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\obj\Debug\net8.0\SemProg.BLL.pdb
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.BLL\obj\Debug\net8.0\ref\SemProg.BLL.dll

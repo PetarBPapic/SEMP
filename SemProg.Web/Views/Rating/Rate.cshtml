@@ -1,0 +1,67 @@
+﻿@model SemProg.BLL.DTOs.RatingDto
+@{
+    ViewData["Title"] = "Oceni epizodu";
+    var title = ViewBag.Title;
+    var existing = ViewBag.Existing as SemProg.BLL.DTOs.RatingViewDto;
+    var all = ViewBag.All as List<SemProg.BLL.DTOs.RatingViewDto>;
+}
+<h2>Oceni: @title</h2>
+
+<!-- FORMA ZA OCENU -->
+<form asp-action="Rate" method="post">
+    <input type="hidden" asp-for="EpisodeId" value="@ViewBag.EpisodeId" />
+
+    <div class="mb-3">
+        <label>Ocena (1-5)</label>
+        <select asp-for="Score" class="form-control">
+            <option value="1">1 - Loše</option>
+            <option value="2">2 - Slabo</option>
+            <option value="3">3 - Prosječno</option>
+            <option value="4">4 - Dobro</option>
+            <option value="5">5 - Odlično</option>
+        </select>
+        <span asp-validation-for="Score" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Komentar</label>
+        <textarea asp-for="Comment" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Comment" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-primary">Pošalji ocenu</button>
+    <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+</form>
+
+<hr />
+
+<!-- PREGLED SVIH OCENA -->
+<h4>Ocene i komentari</h4>
+@if (all == null || !all.Any())
+{
+    <p>Još nema ocena.</p>
+}
+else
+{
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th>Korisnik</th>
+                <th>Ocena</th>
+                <th>Komentar</th>
+                <th>Datum</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var r in all)
+            {
+                <tr>
+                    <td>@r.Username</td>
+                    <td>@r.Score / 5</td>
+                    <td>@r.Comment</td>
+                    <td>@r.RatedAt.ToString("dd.MM.yyyy")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

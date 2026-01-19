@@ -1,0 +1,53 @@
+/* Crno-zlatni akcenti */
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #000 !important;
+    border-bottom: 2px solid gold !important;
+}
+
+.navbar-brand, .nav-link {
+    color: gold !important;
+    font-weight: 600;
+}
+
+    .nav-link:hover {
+        color: #ffd700 !important;
+        text-shadow: 0 0 2px gold;
+    }
+
+.btn-primary {
+    background-color: gold;
+    border-color: gold;
+    color: #000;
+    font-weight: bold;
+}
+
+    .btn-primary:hover {
+        background-color: #ffd700;
+        border-color: #ffd700;
+    }
+
+footer {
+    background-color: #000;
+    color: gold;
+    border-top: 1px solid gold;
+}
+
+/* ---- table-dark fix ---- */
+.table-dark {
+    color: #fff !important;
+    background-color: #1a1a1a !important;
+}
+
+    .table-dark thead th {
+        background-color: #000 !important;
+        color: gold !important;
+    }
+
+    .table-dark tbody td {
+        color: #fff !important;
+    }

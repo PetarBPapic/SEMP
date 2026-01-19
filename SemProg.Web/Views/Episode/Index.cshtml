@@ -1,0 +1,26 @@
+﻿@model List<SemProg.BLL.DTOs.EpisodeDto>
+@{
+    ViewData["Title"] = "Epizode";
+}
+<h2>Epizode</h2>
+<a asp-action="Create" class="btn btn-success mb-3">Dodaj novu epizodu</a>
+
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th>Naslov</th>
+            <th>Opis</th>
+            <th>Datum premijere</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td>@e.Title</td>
+                <td>@(string.IsNullOrEmpty(e.Description) ? "-" : e.Description)</td>
+                <td>@e.ReleaseDate.ToString("dd.MM.yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>

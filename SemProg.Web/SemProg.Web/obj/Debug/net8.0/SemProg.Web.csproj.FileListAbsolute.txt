@@ -140,3 +140,4 @@ C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.Web\obj\Debug\net8.0\re
 C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.Web\obj\Debug\net8.0\SemProg.Web.pdb
 C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.Web\obj\Debug\net8.0\SemProg.Web.genruntimeconfig.cache
 C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.Web\obj\Debug\net8.0\ref\SemProg.Web.dll
+C:\Users\Petar Papic\Desktop\SemProg\SemProg.Web\SemProg.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

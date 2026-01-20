@@ -8,18 +8,34 @@
 <table class="table table-striped table-dark">
     <thead>
         <tr>
+            <th>Id</th>
             <th>Naslov</th>
             <th>Opis</th>
             <th>Datum premijere</th>
+            <th></th>   <!-- kolona za akcije -->
         </tr>
     </thead>
     <tbody>
         @foreach (var e in Model)
         {
             <tr>
+                <td>@e.Id</td>
                 <td>@e.Title</td>
                 <td>@(string.IsNullOrEmpty(e.Description) ? "-" : e.Description)</td>
                 <td>@e.ReleaseDate.ToString("dd.MM.yyyy")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@e.Id" class="btn btn-sm btn-primary">Izmeni</a>
+
+                    @if (Context.Session.GetString("role") == "admin")
+                    {
+                        <form asp-action="Delete" method="post" class="d-inline"
+                              onsubmit="return confirm('Da li ste sigurni da želite da obrišete epizodu?');">
+                            <input type="hidden" name="id" value="@e.Id" />
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-sm btn-danger">Obriši</button>
+                        </form>
+                    }
+                </td>
             </tr>
         }
     </tbody>

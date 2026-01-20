@@ -97,6 +97,17 @@ namespace SemProg.DAL.Migrations
                 table: "Users",
                 column: "Username",
                 unique: true);
+
+            // Seed users
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Username", "Password", "Role" },
+                values: new object[,]
+                {
+                    { "admin", "admin", "admin" },
+                    { "user",  "user",  "user"  },
+                    { "pera",  "pera",  "user"  }
+                });
         }
 
         /// <inheritdoc />

@@ -15,8 +15,8 @@ namespace SemProg.BLL.Services
         {
             var ep = new Episode
             {
-                Title = dto.Title,
-                Description = dto.Description,
+                Title = dto.Title ?? string.Empty,
+                Description = dto.Description ?? string.Empty,
                 ReleaseDate = dto.ReleaseDate,
                 CreatedBy = userId
             };
@@ -30,8 +30,9 @@ namespace SemProg.BLL.Services
                 .OrderByDescending(e => e.ReleaseDate)
                 .Select(e => new EpisodeDto
                 {
-                    Title = e.Title,
-                    Description = e.Description,
+                    Id = e.Id,
+                    Title = e.Title ?? string.Empty,
+                    Description = e.Description ?? string.Empty,
                     ReleaseDate = e.ReleaseDate
                 })
                 .ToListAsync();

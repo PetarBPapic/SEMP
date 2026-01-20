@@ -87,5 +87,25 @@ namespace SemProg.Web.Controllers
             await _ctx.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
+        // DELETE – samo admin
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (HttpContext.Session.GetString("role") != "admin")
+                return Forbid();
+
+            var ep = await _ctx.Episodes.FindAsync(id);
+            if (ep == null) return NotFound();
+
+            // brišemo i sve ocene vezane za epizodu
+            var ratings = _ctx.Ratings.Where(r => r.EpisodeId == id);
+            _ctx.Ratings.RemoveRange(ratings);
+
+            _ctx.Episodes.Remove(ep);
+            await _ctx.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

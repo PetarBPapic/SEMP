@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t1PScvapHds=",
+  "dgSpecHash": "JSQbu7FnXis=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Petar Papic\\Desktop\\SemProg\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj",
+  "projectFilePath": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Petar Papic\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Petar Papic\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

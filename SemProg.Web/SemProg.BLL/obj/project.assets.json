@@ -2684,11 +2684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Petar Papic\\Desktop\\SemProg\\SemProg.Web\\SemProg.BLL\\SemProg.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\SemProg.Web\\SemProg.BLL\\SemProg.BLL.csproj",
       "projectName": "SemProg.BLL",
-      "projectPath": "C:\\Users\\Petar Papic\\Desktop\\SemProg\\SemProg.Web\\SemProg.BLL\\SemProg.BLL.csproj",
+      "projectPath": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\SemProg.Web\\SemProg.BLL\\SemProg.BLL.csproj",
       "packagesPath": "C:\\Users\\Petar Papic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Petar Papic\\Desktop\\SemProg\\SemProg.Web\\SemProg.BLL\\obj\\",
+      "outputPath": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\SemProg.Web\\SemProg.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2709,8 +2709,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Petar Papic\\Desktop\\SemProg\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj": {
-              "projectPath": "C:\\Users\\Petar Papic\\Desktop\\SemProg\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj"
+            "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj": {
+              "projectPath": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Petar Papic\\Desktop\\SemProg\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj": {}
+    "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Petar Papic\\Desktop\\SemProg\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj": {
+    "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Petar Papic\\Desktop\\SemProg\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj",
         "projectName": "SemProg.DAL",
-        "projectPath": "C:\\Users\\Petar Papic\\Desktop\\SemProg\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj",
+        "projectPath": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\SemProg.Web\\SemProg.DAL\\SemProg.DAL.csproj",
         "packagesPath": "C:\\Users\\Petar Papic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Petar Papic\\Desktop\\SemProg\\SemProg.Web\\SemProg.DAL\\obj\\",
+        "outputPath": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\SemProg.Web\\SemProg.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

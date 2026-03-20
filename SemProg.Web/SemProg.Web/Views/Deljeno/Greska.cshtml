@@ -1,0 +1,14 @@
+@model SemProg.Web.Modeli.ModelGreske
+@{
+    ViewData["Title"] = "Greška";
+}
+
+<h1 class="text-danger">Greška.</h1>
+<h2 class="text-danger">Došlo je do greške prilikom obrade zahteva.</h2>
+
+@if (Model.PrikaziIdZahteva)
+{
+    <p>
+        <strong>ID zahteva:</strong> <code>@Model.IdZahteva</code>
+    </p>
+}

@@ -9,65 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SemProg.Web
 build_property.RootNamespace = SemProg.Web
-build_property.ProjectDir = C:\Users\Petar Papic\Desktop\Pera\SEMP\SemProg.Web\SemProg.Web\
+build_property.ProjectDir = C:\Users\Petar Papic\Desktop\Pera - Copy\SEMP\SemProg.Web\SemProg.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Petar Papic\Desktop\Pera\SEMP\SemProg.Web\SemProg.Web
+build_property.MSBuildProjectDirectory = C:\Users\Petar Papic\Desktop\Pera - Copy\SEMP\SemProg.Web\SemProg.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/Deljeno/Greska.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsamVub1xHcmVza2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/Episode/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBpc29kZVxDcmVhdGUuY3NodG1s
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/Deljeno/_Raspored.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsamVub1xfUmFzcG9yZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/Episode/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBpc29kZVxFZGl0LmNzaHRtbA==
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/Deljeno/_SkriptaValidacije.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsamVub1xfU2tyaXB0YVZhbGlkYWNpamUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/Episode/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBpc29kZVxJbmRleC5jc2h0bWw=
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/Epizoda/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBpem9kYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/Epizoda/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBpem9kYVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/Epizoda/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBpem9kYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/Rating/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nXEluZGV4LmNzaHRtbA==
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/Nalog/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFsb2dcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/Rating/Rate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nXFJhdGUuY3NodG1s
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/Ocena/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NlbmFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/Ocena/Oceni.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NlbmFcT2NlbmkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/Pocetna/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9jZXRuYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/_ViewImports.cshtml]
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/Pocetna/Privatnost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9jZXRuYVxQcml2YXRub3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/_ViewStart.cshtml]
+[C:/Users/Petar Papic/Desktop/Pera - Copy/SEMP/SemProg.Web/SemProg.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/SemProg.Web/SemProg.Web/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-ysrbon5ey8

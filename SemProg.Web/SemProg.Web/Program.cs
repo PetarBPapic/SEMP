@@ -1,37 +1,37 @@
 using Microsoft.EntityFrameworkCore;
 using SemProg.DAL;
-using SemProg.BLL.Interfaces;
-using SemProg.BLL.Services;
+using SemProg.BLL.Interfejsi;
+using SemProg.BLL.Servisi;
 
-var builder = WebApplication.CreateBuilder(args);
+var graditelj = WebApplication.CreateBuilder(args);
 
-// Add services
-builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+// Dodaj servise
+graditelj.Services.AddControllersWithViews();
+graditelj.Services.AddDbContext<BazaPodatakaKontekst>(opcije =>
+    opcije.UseSqlServer(graditelj.Configuration.GetConnectionString("PodrazumevanaKonekcija")));
 
-builder.Services.AddSession();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IEpisodeService, EpisodeService>();
-builder.Services.AddScoped<IRatingService, RatingService>();
+graditelj.Services.AddSession();
+graditelj.Services.AddScoped<IServisKorisnika, ServisKorisnika>();
+graditelj.Services.AddScoped<IServisEpizoda, ServisEpizoda>();
+graditelj.Services.AddScoped<IServisOcena, ServisOcena>();
 
-var app = builder.Build();
+var aplikacija = graditelj.Build();
 
-// Configure pipeline
-if (!app.Environment.IsDevelopment())
+// Konfiguriši pipeline
+if (!aplikacija.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();
+    aplikacija.UseExceptionHandler("/Pocetna/Greska");
+    aplikacija.UseHsts();
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseRouting();
-app.UseSession();
-app.UseAuthorization();
+aplikacija.UseHttpsRedirection();
+aplikacija.UseStaticFiles();
+aplikacija.UseRouting();
+aplikacija.UseSession();
+aplikacija.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+aplikacija.MapControllerRoute(
+    name: "podrazumevano",
+    pattern: "{controller=Pocetna}/{action=Index}/{id?}");
 
-app.Run();
+aplikacija.Run();

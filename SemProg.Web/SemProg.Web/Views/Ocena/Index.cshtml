@@ -1,0 +1,31 @@
+@model List<SemProg.BLL.DtoOvi.EpizodaSaStatistikomDto>
+@{
+    ViewData["Title"] = "Epizode";
+}
+<h2>Epizode</h2>
+
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>Naslov</th>
+            <th>Opis</th>
+            <th>Datum</th>
+            <th>Prosečna ocena</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td>@e.Naslov</td>
+                <td>@(string.IsNullOrEmpty(e.Opis) ? "-" : e.Opis)</td>
+                <td>@e.DatumPremijere.ToString("dd.MM.yyyy")</td>
+                <td>@(e.ProsecnaOcena.ToString("0.0")) / 5</td>
+                <td>
+                    <a asp-action="Oceni" asp-route-id="@e.EpizodaId" class="btn btn-sm btn-primary">Oceni</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

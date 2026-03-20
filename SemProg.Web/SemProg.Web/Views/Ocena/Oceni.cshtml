@@ -1,0 +1,65 @@
+@model SemProg.BLL.DtoOvi.OcenaDto
+@{
+    ViewData["Title"] = "Oceni epizodu";
+    var naslov = ViewBag.Naslov;
+    var postojeca = ViewBag.Postojeca as SemProg.BLL.DtoOvi.PregledOceneDto;
+    var sve = ViewBag.Sve as List<SemProg.BLL.DtoOvi.PregledOceneDto>;
+}
+<h2>Oceni: @naslov</h2>
+
+<form asp-action="Oceni" method="post">
+    <input type="hidden" asp-for="EpizodaId" value="@ViewBag.EpizodaId" />
+
+    <div class="mb-3">
+        <label asp-for="Vrednost" class="form-label"></label>
+        <select asp-for="Vrednost" class="form-control">
+            <option value="1">1 - Loše</option>
+            <option value="2">2 - Slabo</option>
+            <option value="3">3 - Prosječno</option>
+            <option value="4">4 - Dobro</option>
+            <option value="5">5 - Odlično</option>
+        </select>
+        <span asp-validation-for="Vrednost" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Komentar" class="form-label"></label>
+        <textarea asp-for="Komentar" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Komentar" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-primary">Pošalji ocenu</button>
+    <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+</form>
+
+<hr />
+
+<h4>Ocene i komentari</h4>
+@if (sve == null || !sve.Any())
+{
+    <p>Još nema ocena.</p>
+}
+else
+{
+    <table class="table table-sm table-dark table-striped">
+        <thead>
+            <tr>
+                <th>Korisnik</th>
+                <th>Ocena</th>
+                <th>Komentar</th>
+                <th>Datum</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var o in sve)
+            {
+                <tr>
+                    <td>@o.KorisnickoIme</td>
+                    <td>@o.Vrednost / 5</td>
+                    <td>@o.Komentar</td>
+                    <td>@o.OcenjenoNa.ToString("dd.MM.yyyy")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

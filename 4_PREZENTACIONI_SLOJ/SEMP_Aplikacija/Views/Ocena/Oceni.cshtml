@@ -1,0 +1,127 @@
+@model SEMP_Aplikacija.ViewModels.OcenaViewModel
+@{
+    ViewData["Title"] = $"Oceni: {Model.NaslovEpizode}";
+}
+
+<div class="row">
+    <div class="col-md-5">
+        <div class="card bg-dark text-white border-warning mb-4">
+            <div class="card-header bg-warning text-dark fw-bold">
+                ★ Tvoja ocena za: @Model.NaslovEpizode
+            </div>
+            <div class="card-body p-4">
+                @if (Model.MojaOcena != null)
+                {
+                    <div class="alert alert-info py-2 mb-3">
+                        Imas postojecu ocenu: <strong>@Model.MojaOcena.Vrednost/5</strong>. Mozes je izmeniti.
+                    </div>
+                }
+
+                <form asp-action="Oceni" method="post">
+                    <input type="hidden" asp-for="EpizodaId" />
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger py-2"></div>
+
+                    <div class="mb-4">
+                        <label class="form-label text-warning fw-bold">Ocena (1-5 zvezdica)</label>
+                        <div class="d-flex gap-2 fs-2" id="zvezde">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                <label class="zvezdica @(i <= Model.Vrednost ? "text-warning" : "text-muted")"
+                                       style="cursor:pointer;" data-vrednost="@i">★</label>
+                            }
+                        </div>
+                        <input type="hidden" asp-for="Vrednost" id="vrednostInput" />
+                        <span asp-validation-for="Vrednost" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Komentar" class="form-label text-warning">Komentar</label>
+                        <textarea asp-for="Komentar" class="form-control bg-dark text-white border-secondary"
+                                  rows="3" placeholder="Napisi kratak komentar (opcionalno)..."></textarea>
+                        <span asp-validation-for="Komentar" class="text-danger small"></span>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-warning flex-grow-1 fw-bold">
+                            Posalji ocenu
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-secondary">Nazad</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <div class="card bg-dark text-white border-secondary">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Ocene drugih gledalaca</span>
+                @if (Model.PostojeceOcene.Any())
+                {
+                    <span class="badge bg-warning text-dark">
+                        Prosek: ★ @Model.ProsecnaOcena.ToString("F1") / 5
+                    </span>
+                }
+            </div>
+            <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+                @if (!Model.PostojeceOcene.Any())
+                {
+                    <p class="text-muted">Budi prvi i oceni ovu epizodu!</p>
+                }
+                else
+                {
+                    @foreach (var o in Model.PostojeceOcene.OrderByDescending(x => x.OcenjeneNa))
+                    {
+                        <div class="border-bottom border-secondary pb-2 mb-2">
+                            <div class="d-flex justify-content-between">
+                                <strong class="text-warning">
+                                    @string.Concat(Enumerable.Repeat("★", o.Vrednost))@string.Concat(Enumerable.Repeat("☆", 5 - o.Vrednost))
+                                </strong>
+                                <small class="text-muted">@o.OcenjeneNa.ToString("dd.MM.yyyy HH:mm")</small>
+                            </div>
+                            @if (!string.IsNullOrEmpty(o.Komentar))
+                            {
+                                <p class="mb-0 text-light small mt-1">@o.Komentar</p>
+                            }
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const zvezde = document.querySelectorAll('.zvezdica');
+            const input = document.getElementById('vrednostInput');
+
+            zvezde.forEach(function (zvezda) {
+                zvezda.addEventListener('click', function () {
+                    const vrednost = parseInt(this.dataset.vrednost);
+                    input.value = vrednost;
+                    zvezde.forEach(function (z, idx) {
+                        z.classList.toggle('text-warning', idx < vrednost);
+                        z.classList.toggle('text-muted', idx >= vrednost);
+                    });
+                });
+                zvezda.addEventListener('mouseover', function () {
+                    const vrednost = parseInt(this.dataset.vrednost);
+                    zvezde.forEach(function (z, idx) {
+                        z.classList.toggle('text-warning', idx < vrednost);
+                        z.classList.toggle('text-muted', idx >= vrednost);
+                    });
+                });
+                zvezda.addEventListener('mouseout', function () {
+                    const trenutna = parseInt(input.value) || 0;
+                    zvezde.forEach(function (z, idx) {
+                        z.classList.toggle('text-warning', idx < trenutna);
+                        z.classList.toggle('text-muted', idx >= trenutna);
+                    });
+                });
+            });
+        });
+    </script>
+}

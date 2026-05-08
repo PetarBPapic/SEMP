@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TopListe azuriranaNa="2026-05-08 09:16:55">
+  <Top5>
+    <Epizoda mesto="1">
+      <Id>6</Id>
+      <Naslov>Epilog</Naslov>
+      <Opis>Kako su se stvari zavrsile. Zatvaranje prvih prica i nagovestaj novog pocetka.</Opis>
+      <ProsecnaOcena>5.00</ProsecnaOcena>
+      <BrojOcena>1</BrojOcena>
+      <DatumPremijere>19.02.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="2">
+      <Id>9</Id>
+      <Naslov>Izgubljena Uspomena</Naslov>
+      <Opis>Neko nema secanja. Ali neko ih ima previse. Sta se zapravo desilo one noci?</Opis>
+      <ProsecnaOcena>5.00</ProsecnaOcena>
+      <BrojOcena>1</BrojOcena>
+      <DatumPremijere>15.09.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="3">
+      <Id>5</Id>
+      <Naslov>Finalna Bitka</Naslov>
+      <Opis>Sve se zbiva u ovu jednu noc. Sudbine svih likova se odlucuju. Ko ce preziveti?</Opis>
+      <ProsecnaOcena>4.75</ProsecnaOcena>
+      <BrojOcena>4</BrojOcena>
+      <DatumPremijere>12.02.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="4">
+      <Id>10</Id>
+      <Naslov>Zora</Naslov>
+      <Opis>Vrhunac druge sezone. Sve dolazi na naplatu. Nista nece biti isto posle ovoga.</Opis>
+      <ProsecnaOcena>4.67</ProsecnaOcena>
+      <BrojOcena>3</BrojOcena>
+      <DatumPremijere>22.09.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="5">
+      <Id>4</Id>
+      <Naslov>Povratak</Naslov>
+      <Opis>Lik kojeg smo izgubili se vraca - ali promenjen. Da li je to ista osoba?</Opis>
+      <ProsecnaOcena>4.50</ProsecnaOcena>
+      <BrojOcena>2</BrojOcena>
+      <DatumPremijere>05.02.2024</DatumPremijere>
+    </Epizoda>
+  </Top5>
+  <Top10>
+    <Epizoda mesto="1">
+      <Id>6</Id>
+      <Naslov>Epilog</Naslov>
+      <Opis>Kako su se stvari zavrsile. Zatvaranje prvih prica i nagovestaj novog pocetka.</Opis>
+      <ProsecnaOcena>5.00</ProsecnaOcena>
+      <BrojOcena>1</BrojOcena>
+      <DatumPremijere>19.02.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="2">
+      <Id>9</Id>
+      <Naslov>Izgubljena Uspomena</Naslov>
+      <Opis>Neko nema secanja. Ali neko ih ima previse. Sta se zapravo desilo one noci?</Opis>
+      <ProsecnaOcena>5.00</ProsecnaOcena>
+      <BrojOcena>1</BrojOcena>
+      <DatumPremijere>15.09.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="3">
+      <Id>5</Id>
+      <Naslov>Finalna Bitka</Naslov>
+      <Opis>Sve se zbiva u ovu jednu noc. Sudbine svih likova se odlucuju. Ko ce preziveti?</Opis>
+      <ProsecnaOcena>4.75</ProsecnaOcena>
+      <BrojOcena>4</BrojOcena>
+      <DatumPremijere>12.02.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="4">
+      <Id>10</Id>
+      <Naslov>Zora</Naslov>
+      <Opis>Vrhunac druge sezone. Sve dolazi na naplatu. Nista nece biti isto posle ovoga.</Opis>
+      <ProsecnaOcena>4.67</ProsecnaOcena>
+      <BrojOcena>3</BrojOcena>
+      <DatumPremijere>22.09.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="5">
+      <Id>4</Id>
+      <Naslov>Povratak</Naslov>
+      <Opis>Lik kojeg smo izgubili se vraca - ali promenjen. Da li je to ista osoba?</Opis>
+      <ProsecnaOcena>4.50</ProsecnaOcena>
+      <BrojOcena>2</BrojOcena>
+      <DatumPremijere>05.02.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="6">
+      <Id>3</Id>
+      <Naslov>Izdaja</Naslov>
+      <Opis>Neko iz ekipe prelazi na drugu stranu. Prijateljstvo je stavljeno na tesku probu.</Opis>
+      <ProsecnaOcena>4.33</ProsecnaOcena>
+      <BrojOcena>3</BrojOcena>
+      <DatumPremijere>29.01.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="7">
+      <Id>1</Id>
+      <Naslov>Pilot - Pocetak Svega</Naslov>
+      <Opis>Uvod u svet serije. Upoznajemo glavne likove i pocetnu situaciju koja ce promeniti sve.</Opis>
+      <ProsecnaOcena>4.33</ProsecnaOcena>
+      <BrojOcena>3</BrojOcena>
+      <DatumPremijere>15.01.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="8">
+      <Id>2</Id>
+      <Naslov>Tajna Proslost</Naslov>
+      <Opis>Otkriva se misterija iz proslosti glavnog lika. Nista nije onako kako se cinilo.</Opis>
+      <ProsecnaOcena>3.50</ProsecnaOcena>
+      <BrojOcena>2</BrojOcena>
+      <DatumPremijere>22.01.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="9">
+      <Id>7</Id>
+      <Naslov>Novi Poceci</Naslov>
+      <Opis>Druga sezona pocinje. Novi likovi ulaze u igru, novi problemi se pojavljuju.</Opis>
+      <ProsecnaOcena>3.50</ProsecnaOcena>
+      <BrojOcena>2</BrojOcena>
+      <DatumPremijere>01.09.2024</DatumPremijere>
+    </Epizoda>
+    <Epizoda mesto="10">
+      <Id>8</Id>
+      <Naslov>Mracni Grad</Naslov>
+      <Opis>Istraga u gradu prepunom tajni. Svako ima nesto da krije.</Opis>
+      <ProsecnaOcena>1.00</ProsecnaOcena>
+      <BrojOcena>1</BrojOcena>
+      <DatumPremijere>08.09.2024</DatumPremijere>
+    </Epizoda>
+  </Top10>
+</TopListe>

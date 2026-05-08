@@ -1,0 +1,45 @@
+/* SEBIČAN Reviews - Custom CSS */
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    margin-bottom: 60px;
+}
+
+/* Zvezde za ocenjivanje */
+.zvezdica {
+    transition: transform 0.1s;
+    user-select: none;
+}
+
+.zvezdica:hover {
+    transform: scale(1.2);
+}
+
+/* Tabele */
+.table-dark th {
+    border-color: #444;
+}
+
+/* Kartice */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

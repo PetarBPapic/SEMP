@@ -1,0 +1,90 @@
+@model SEMP_Aplikacija.ViewModels.PocetnaViewModel
+@{
+    ViewData["Title"] = "Pocetna strana";
+}
+
+<div class="py-5 px-4 mb-4 rounded-3 text-center"
+     style="background: linear-gradient(135deg, #111 60%, #1a1a00); border: 1px solid #ffc107;">
+    <h1 class="display-4 fw-bold text-warning">SEBICAN REVIEWS</h1>
+    <p class="lead text-white">Mi gledamo, mi ocenjujemo, mi odlucujemo sta vredi tvog vremena.</p>
+    <hr class="border-warning w-25 mx-auto" />
+    <p class="text-light">Samo jedna ocena po epizodi. Zlatna pravila vaze.</p>
+    @if (!Model.KorisnikUlogovan)
+    {
+        <a asp-controller="Nalog" asp-action="Prijava" class="btn btn-warning btn-lg mt-2 me-2">
+            Prijavi se i oceni
+        </a>
+    }
+    <a asp-controller="Ocena" asp-action="RangLista" class="btn btn-outline-warning btn-lg mt-2">
+        🏆 Pogledaj rang listu
+    </a>
+</div>
+
+<div class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="text-warning">🥇 Top 5 Epizoda</h2>
+        <small class="text-muted">Azurirano: @Model.DatumAzuriranja</small>
+    </div>
+
+    @if (!Model.Top5.Any())
+    {
+        <div class="alert alert-dark border-warning">
+            <p class="mb-0">Trenutno nema dovoljno ocena za top listu. Budi prvi i oceni!</p>
+        </div>
+    }
+    else
+    {
+        <div class="row g-3">
+            @for (int i = 0; i < Model.Top5.Count; i++)
+            {
+                var ep = Model.Top5[i];
+                int mesto = i + 1;
+                string medalja = mesto == 1 ? "🥇" : mesto == 2 ? "🥈" : mesto == 3 ? "🥉" : $"#{mesto}";
+                string borderKlasa = mesto == 1 ? "border-warning" : mesto <= 3 ? "border-secondary" : "";
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark text-white h-100 @borderKlasa" style="border-width: @(mesto <= 3 ? "2px" : "1px")">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span class="fs-4">@medalja</span>
+                            <span class="badge bg-warning text-dark fs-6">
+                                ★ @ep.ProsecnaOcena.ToString("F1") / 5
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@ep.Naslov</h5>
+                            <p class="card-text text-muted small">
+                                @(ep.Opis.Length > 100 ? ep.Opis.Substring(0, 100) + "..." : ep.Opis)
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <small class="text-muted">@ep.BrojOcena ocena</small>
+                            <small class="text-muted">@ep.DatumPremijere.ToString("dd.MM.yyyy")</small>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@if (Model.KorisnikUlogovan)
+{
+    <div class="text-center py-4 bg-dark rounded-3 border border-warning">
+        <h4 class="text-warning">Spreman si da ocenis sledecu epizodu?</h4>
+        <a asp-controller="Ocena" asp-action="Index" class="btn btn-warning btn-lg mt-2 me-2">
+            Oceni epizode
+        </a>
+        <a asp-controller="Ocena" asp-action="RangLista" class="btn btn-outline-light btn-lg mt-2">
+            Pogledaj Top 10 i celu listu
+        </a>
+    </div>
+}
+else
+{
+    <div class="text-center py-4 bg-dark rounded-3 border border-secondary">
+        <h4 class="text-white">Zelis da glasas?</h4>
+        <p class="text-muted">Prijavi se i ostavi svoju ocenu - samo jednom po epizodi.</p>
+        <a asp-controller="Nalog" asp-action="Prijava" class="btn btn-warning btn-lg mt-2">
+            Prijavi se
+        </a>
+    </div>
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SEMP_Aplikacija")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad3e4fc3ce01288d358b7cc51872c6b8fee75f77")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf1fafd1caf29ea5a7d07802e543c91082665382")]
 [assembly: System.Reflection.AssemblyProductAttribute("SEMP_Aplikacija")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SEMP_Aplikacija")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

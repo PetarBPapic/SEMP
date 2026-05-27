@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<TopListe azuriranaNa="2026-05-26 12:08:26">
+<TopListe azuriranaNa="2026-05-27 20:51:38">
   <Top5>
     <Epizoda mesto="1">
       <Id>6</Id>
@@ -101,11 +101,11 @@
     </Epizoda>
     <Epizoda mesto="8">
       <Id>11</Id>
-      <Naslov>Test1</Naslov>
-      <Opis>Test</Opis>
+      <Naslov>Vox</Naslov>
+      <Opis>Vox</Opis>
       <ProsecnaOcena>3.67</ProsecnaOcena>
       <BrojOcena>3</BrojOcena>
-      <DatumPremijere>08.01.2026</DatumPremijere>
+      <DatumPremijere>15.10.2025</DatumPremijere>
     </Epizoda>
     <Epizoda mesto="9">
       <Id>7</Id>

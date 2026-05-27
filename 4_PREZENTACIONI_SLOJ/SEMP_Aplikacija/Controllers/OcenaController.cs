@@ -6,6 +6,11 @@ using System.Text.Json;
 
 namespace SEMP_Aplikacija.Controllers
 {
+    /// <summary>
+    /// OcenaController - prezentacioni sloj.
+    /// Rang lista (Top5/Top10) se ucitava POZIVOM REST SERVISA.
+    /// Ocenjivanje ide kroz PoslovniProces koji sam poziva servis za parametar ogranicenja.
+    /// </summary>
     public class OcenaController : Controller
     {
         private readonly PoslovniProces _poslovniProces;
@@ -30,6 +35,9 @@ namespace SEMP_Aplikacija.Controllers
 
         private bool JeUlogovan() => HttpContext.Session.GetString("korisnik") != null;
 
+        /// <summary>
+        /// Lista svih epizoda za ocenjivanje - zahteva prijavu.
+        /// </summary>
         [HttpGet]
         public IActionResult Index()
         {
@@ -37,6 +45,7 @@ namespace SEMP_Aplikacija.Controllers
                 return RedirectToAction("Prijava", "Nalog");
 
             var epizode = _poslovniProces.DajSveEpizode();
+            var korisnikIme = HttpContext.Session.GetString("korisnik")!;
 
             var viewModeli = epizode.Select(e =>
             {
@@ -55,18 +64,22 @@ namespace SEMP_Aplikacija.Controllers
         }
 
         /// <summary>
-        /// Rang lista se ucitava POZIVOM REST SERVISA.
+        /// Prikaz rang liste: Top10 i sve epizode sortirane.
+        /// Podaci se ucitavaju POZIVOM REST SERVISA - servis je medjusloj.
+        /// Vidljivo i bez prijave i sa prijavom.
         /// </summary>
         [HttpGet]
         public async Task<IActionResult> RangLista()
         {
             var klijent = KreirajKlijenta();
+
             var top10Lista = new List<TopEpizodaModel>();
             var sveSortiranaLista = new List<TopEpizodaModel>();
             string datumAzuriranja = "";
 
             try
             {
+                // Poziv REST servisa - GET api/epizode/top10
                 var odgovorTop10 = await klijent.GetAsync("api/epizode/top10");
                 if (odgovorTop10.IsSuccessStatusCode)
                 {
@@ -76,6 +89,7 @@ namespace SEMP_Aplikacija.Controllers
                         ?? new List<TopEpizodaModel>();
                 }
 
+                // Poziv REST servisa - GET api/epizode/sve-sortirane
                 var odgovorSve = await klijent.GetAsync("api/epizode/sve-sortirane");
                 if (odgovorSve.IsSuccessStatusCode)
                 {
@@ -89,7 +103,7 @@ namespace SEMP_Aplikacija.Controllers
             }
             catch
             {
-                // Fallback ako REST API nije dostupan
+                // Fallback na direktan poziv ako REST API nije dostupan
                 top10Lista = _poslovniProces.DajTop10IzXml();
                 sveSortiranaLista = _poslovniProces.DajSveEpizodeSortirane();
                 datumAzuriranja = _poslovniProces.DajDatumAzuriranja();
@@ -104,6 +118,9 @@ namespace SEMP_Aplikacija.Controllers
             return View(viewModel);
         }
 
+        /// <summary>
+        /// Forma za ocenjivanje konkretne epizode.
+        /// </summary>
         [HttpGet]
         public IActionResult Oceni(int id)
         {
@@ -114,6 +131,7 @@ namespace SEMP_Aplikacija.Controllers
             if (ep == null) return NotFound();
 
             var korisnikId = int.Parse(HttpContext.Session.GetString("uid")!);
+            var korisnikIme = HttpContext.Session.GetString("korisnik")!;
             var sveOcene = _poslovniProces.DajOceneZaEpizodu(id);
             var mojaOcena = _poslovniProces.DajOcenuKorisnika(id, korisnikId);
 
@@ -127,7 +145,7 @@ namespace SEMP_Aplikacija.Controllers
                 MojaOcena = mojaOcena,
                 PostojeceOcene = sveOcene.Select(o => new OcenaDetaljiViewModel
                 {
-                    KorisnickoIme = o.KorisnikId.ToString(),
+                    KorisnickoIme = o.KorisnikId.ToString(), // Prikazuje se ID - mozete dopuniti
                     Vrednost = o.Vrednost,
                     Komentar = o.Komentar,
                     OcenjeneNa = o.OcenjeneNa
@@ -135,6 +153,40 @@ namespace SEMP_Aplikacija.Controllers
             };
 
             return View(viewModel);
+        }
+
+        /// <summary>
+        /// Stampa - printer friendly stranica sa svim epizodama i njihovim ocenama.
+        /// Realizacija zahteva za stampom spiska i parametarskom stampom.
+        /// </summary>
+        [HttpGet]
+        public IActionResult Stampa()
+        {
+            if (!JeUlogovan())
+                return RedirectToAction("Prijava", "Nalog");
+
+            var epizode = _poslovniProces.DajSveEpizode();
+
+            var viewModeli = epizode.Select(e =>
+            {
+                var ocene = _poslovniProces.DajOceneZaEpizodu(e.Id);
+                double prosek = ocene.Any() ? ocene.Average(o => o.Vrednost) : 0;
+                return new OcenaViewModel
+                {
+                    EpizodaId = e.Id,
+                    NaslovEpizode = e.Naslov,
+                    ProsecnaOcena = Math.Round(prosek, 2),
+                    PostojeceOcene = ocene.Select(o => new OcenaDetaljiViewModel
+                    {
+                        KorisnickoIme = o.KorisnikId.ToString(),
+                        Vrednost = o.Vrednost,
+                        Komentar = o.Komentar,
+                        OcenjeneNa = o.OcenjeneNa
+                    }).ToList()
+                };
+            }).ToList();
+
+            return View(viewModeli);
         }
 
         [HttpPost]
@@ -155,11 +207,11 @@ namespace SEMP_Aplikacija.Controllers
 
             try
             {
-                // PoslovniProces interno:
-                // 1) cita MaksOcenaPoKorisniku putem REST servisa (iz JSON)
-                // 2) proverava broj danasanjih ocena putem stored procedure
-                // 3) primenjuje poslovno pravilo (AKO limit ONDA odbija)
-                // 4) snima ocenu i azurira Top liste
+                // Poziva PoslovniProces koji interno:
+                //   1) cita parametar MaksOcenaPoKorisniku putem REST servisa (iz JSON)
+                //   2) proverava broj danasanjih ocena putem stored procedure
+                //   3) primenjuje poslovno pravilo (AKO prekoracen limit ONDA odbija)
+                //   4) snima ocenu i azurira Top liste u XML-u
                 _poslovniProces.OceniEpizodu(
                     viewModel.EpizodaId,
                     korisnikId,
@@ -170,7 +222,7 @@ namespace SEMP_Aplikacija.Controllers
             }
             catch (InvalidOperationException ex)
             {
-                // Poslovno pravilo odbilo - prikazujemo poruku korisniku
+                // Poslovno pravilo odbilo akciju - prikazujemo poruku korisniku
                 TempData["Greska"] = ex.Message;
             }
 

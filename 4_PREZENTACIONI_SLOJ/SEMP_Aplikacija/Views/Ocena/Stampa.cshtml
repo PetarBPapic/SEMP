@@ -1,0 +1,77 @@
+@model List<SEMP_Aplikacija.ViewModels.OcenaViewModel>
+@{
+    ViewData["Title"] = "Štampa — Epizode i ocene";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SEBICAN Reviews — Štampa epizoda i ocena</title>
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 12px; margin: 20px; color: #000; }
+        h1 { font-size: 18px; border-bottom: 2px solid #000; padding-bottom: 5px; }
+        h2 { font-size: 14px; margin-top: 20px; background: #eee; padding: 4px 8px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+        th { background: #333; color: #fff; padding: 5px 8px; text-align: left; }
+        td { border: 1px solid #ccc; padding: 4px 8px; vertical-align: top; }
+        .info { font-size: 11px; color: #555; margin-bottom: 15px; }
+        .no-print { margin-bottom: 15px; }
+        @@media print {
+            .no-print { display: none; }
+            body { margin: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print">
+        <button onclick="window.print()">🖨 Štampaj</button>
+        <a href="javascript:history.back()">← Nazad</a>
+    </div>
+
+    <h1>SEBICAN Reviews — Izveštaj o epizodama i ocenama</h1>
+    <p class="info">Datum štampe: @DateTime.Now.ToString("dd.MM.yyyy HH:mm")</p>
+
+    @foreach (var ep in Model)
+    {
+        <h2>@ep.NaslovEpizode</h2>
+        <p class="info">
+            Prosečna ocena: <strong>@ep.ProsecnaOcena.ToString("0.00")</strong> |
+            Broj ocena: <strong>@ep.PostojeceOcene.Count</strong>
+        </p>
+
+        @if (ep.PostojeceOcene.Any())
+        {
+            <table>
+                <thead>
+                    <tr>
+                        <th>Korisnik</th>
+                        <th>Ocena</th>
+                        <th>Komentar</th>
+                        <th>Datum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var ocena in ep.PostojeceOcene)
+                    {
+                        <tr>
+                            <td>@ocena.KorisnickoIme</td>
+                            <td>@ocena.Vrednost / 5</td>
+                            <td>@(string.IsNullOrEmpty(ocena.Komentar) ? "—" : ocena.Komentar)</td>
+                            <td>@ocena.OcenjeneNa.ToString("dd.MM.yyyy")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p><em>Nema ocena za ovu epizodu.</em></p>
+        }
+    }
+
+    <p class="info" style="margin-top:30px; border-top:1px solid #ccc; padding-top:5px;">
+        SEBICAN Reviews © @DateTime.Now.Year
+    </p>
+</body>
+</html>

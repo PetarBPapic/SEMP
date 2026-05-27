@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\controllers\\ocenacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\controllers\\ocenacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\views\\ocena\\stampa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\views\\ocena\\stampa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\views\\ocena\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\views\\ocena\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C3333333-3333-3333-3333-333333333333}|3_SLOJ_SERVISA\\SEMP_REST_API\\SEMP_REST_API.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\3_sloj_servisa\\semp_rest_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C3333333-3333-3333-3333-333333333333}|3_SLOJ_SERVISA\\SEMP_REST_API\\SEMP_REST_API.csproj|solutionrelative:3_sloj_servisa\\semp_rest_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -25,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\controllers\\ocenacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\controllers\\ocenacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\controllers\\epizodacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,30 +83,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Properties\\launchSettings.json",
-              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-26T09:57:17.086Z"
+              "Title": "Stampa.cshtml",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Stampa.cshtml",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Stampa.cshtml",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Stampa.cshtml",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Stampa.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAiwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-27T18:45:32.014Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ogranicenjeUpisa.json",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
-              "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
-              "RelativeToolTip": "3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-25T18:50:08.728Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-27T18:36:50.993Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Program.cs",
               "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\Program.cs",
@@ -110,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\Properties\\launchSettings.json",
@@ -123,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\appsettings.json",
               "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\appsettings.json",
@@ -135,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Program.cs",
               "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Program.cs",
@@ -147,19 +157,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "OcenaController.cs",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
               "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
               "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
               "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAmwLMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAmwNsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:41:38.489Z"
+              "WhenOpened": "2026-05-25T11:41:38.489Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "ogranicenjeUpisa.json",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
+              "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
+              "RelativeToolTip": "3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-25T18:50:08.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Properties\\launchSettings.json",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-26T09:57:17.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "EpizodaController.cs",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\EpizodaController.cs",
               "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\EpizodaController.cs",
@@ -171,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ogranicenjeUpisa.json",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Ogranicenja\\ogranicenjeUpisa.json",
               "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\Ogranicenja\\ogranicenjeUpisa.json",
@@ -183,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "EpizodeController.cs",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\EpizodeController.cs",
               "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\EpizodeController.cs",
@@ -195,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "PoslovniProces.cs",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovniProcessi\\PoslovniProces.cs",
               "RelativeDocumentMoniker": "2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovniProcessi\\PoslovniProces.cs",
@@ -207,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "EpizodaSpRepo.cs",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaSpRepo.cs",
               "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaSpRepo.cs",

@@ -1,23 +1,35 @@
 using Microsoft.AspNetCore.Mvc;
+using BibliotekaKlasa.KlasePodataka.Modeli;
 using PoslovnaLogika.PoslovniProcessi;
 using SEMP_Aplikacija.ViewModels;
+using System.Text.Json;
 
 namespace SEMP_Aplikacija.Controllers
 {
     public class OcenaController : Controller
     {
         private readonly PoslovniProces _poslovniProces;
+        private readonly IHttpClientFactory _httpKlijentFactory;
+        private readonly IConfiguration _konfiguracija;
 
-        public OcenaController(PoslovniProces poslovniProces)
+        public OcenaController(PoslovniProces poslovniProces,
+                               IHttpClientFactory httpKlijentFactory,
+                               IConfiguration konfiguracija)
         {
             _poslovniProces = poslovniProces;
+            _httpKlijentFactory = httpKlijentFactory;
+            _konfiguracija = konfiguracija;
+        }
+
+        private HttpClient KreirajKlijenta()
+        {
+            var klijent = _httpKlijentFactory.CreateClient();
+            klijent.BaseAddress = new Uri(_konfiguracija["RestApiUrl"] ?? "https://localhost:7001");
+            return klijent;
         }
 
         private bool JeUlogovan() => HttpContext.Session.GetString("korisnik") != null;
 
-        /// <summary>
-        /// Lista svih epizoda za ocenjivanje - zahteva prijavu.
-        /// </summary>
         [HttpGet]
         public IActionResult Index()
         {
@@ -25,7 +37,6 @@ namespace SEMP_Aplikacija.Controllers
                 return RedirectToAction("Prijava", "Nalog");
 
             var epizode = _poslovniProces.DajSveEpizode();
-            var korisnikIme = HttpContext.Session.GetString("korisnik")!;
 
             var viewModeli = epizode.Select(e =>
             {
@@ -44,24 +55,55 @@ namespace SEMP_Aplikacija.Controllers
         }
 
         /// <summary>
-        /// Prikaz rang liste: Top10 i sve epizode sortirane.
-        /// Vidljivo i bez prijave i sa prijavom.
+        /// Rang lista se ucitava POZIVOM REST SERVISA.
         /// </summary>
         [HttpGet]
-        public IActionResult RangLista()
+        public async Task<IActionResult> RangLista()
         {
+            var klijent = KreirajKlijenta();
+            var top10Lista = new List<TopEpizodaModel>();
+            var sveSortiranaLista = new List<TopEpizodaModel>();
+            string datumAzuriranja = "";
+
+            try
+            {
+                var odgovorTop10 = await klijent.GetAsync("api/epizode/top10");
+                if (odgovorTop10.IsSuccessStatusCode)
+                {
+                    var json = await odgovorTop10.Content.ReadAsStringAsync();
+                    top10Lista = JsonSerializer.Deserialize<List<TopEpizodaModel>>(json,
+                        new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
+                        ?? new List<TopEpizodaModel>();
+                }
+
+                var odgovorSve = await klijent.GetAsync("api/epizode/sve-sortirane");
+                if (odgovorSve.IsSuccessStatusCode)
+                {
+                    var json = await odgovorSve.Content.ReadAsStringAsync();
+                    sveSortiranaLista = JsonSerializer.Deserialize<List<TopEpizodaModel>>(json,
+                        new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
+                        ?? new List<TopEpizodaModel>();
+                }
+
+                datumAzuriranja = _poslovniProces.DajDatumAzuriranja();
+            }
+            catch
+            {
+                // Fallback ako REST API nije dostupan
+                top10Lista = _poslovniProces.DajTop10IzXml();
+                sveSortiranaLista = _poslovniProces.DajSveEpizodeSortirane();
+                datumAzuriranja = _poslovniProces.DajDatumAzuriranja();
+            }
+
             var viewModel = new EpizodaRangListaViewModel
             {
-                Top10 = _poslovniProces.DajTop10IzXml(),
-                SveSortirane = _poslovniProces.DajSveEpizodeSortirane(),
-                DatumAzuriranja = _poslovniProces.DajDatumAzuriranja()
+                Top10 = top10Lista,
+                SveSortirane = sveSortiranaLista,
+                DatumAzuriranja = datumAzuriranja
             };
             return View(viewModel);
         }
 
-        /// <summary>
-        /// Forma za ocenjivanje konkretne epizode.
-        /// </summary>
         [HttpGet]
         public IActionResult Oceni(int id)
         {
@@ -72,7 +114,6 @@ namespace SEMP_Aplikacija.Controllers
             if (ep == null) return NotFound();
 
             var korisnikId = int.Parse(HttpContext.Session.GetString("uid")!);
-            var korisnikIme = HttpContext.Session.GetString("korisnik")!;
             var sveOcene = _poslovniProces.DajOceneZaEpizodu(id);
             var mojaOcena = _poslovniProces.DajOcenuKorisnika(id, korisnikId);
 
@@ -86,7 +127,7 @@ namespace SEMP_Aplikacija.Controllers
                 MojaOcena = mojaOcena,
                 PostojeceOcene = sveOcene.Select(o => new OcenaDetaljiViewModel
                 {
-                    KorisnickoIme = o.KorisnikId.ToString(), // Prikazuje se ID - mozete dopuniti
+                    KorisnickoIme = o.KorisnikId.ToString(),
                     Vrednost = o.Vrednost,
                     Komentar = o.Komentar,
                     OcenjeneNa = o.OcenjeneNa
@@ -112,15 +153,27 @@ namespace SEMP_Aplikacija.Controllers
 
             int korisnikId = int.Parse(HttpContext.Session.GetString("uid")!);
 
-            // Pozivamo poslovni proces - on ce oceniti i automatski azurirati Top liste
-            _poslovniProces.OceniEpizodu(
-                viewModel.EpizodaId,
-                korisnikId,
-                viewModel.Vrednost,
-                viewModel.Komentar
-            );
+            try
+            {
+                // PoslovniProces interno:
+                // 1) cita MaksOcenaPoKorisniku putem REST servisa (iz JSON)
+                // 2) proverava broj danasanjih ocena putem stored procedure
+                // 3) primenjuje poslovno pravilo (AKO limit ONDA odbija)
+                // 4) snima ocenu i azurira Top liste
+                _poslovniProces.OceniEpizodu(
+                    viewModel.EpizodaId,
+                    korisnikId,
+                    viewModel.Vrednost,
+                    viewModel.Komentar
+                );
+                TempData["Poruka"] = "Vaša ocena je uspešno sačuvana! Top liste su ažurirane.";
+            }
+            catch (InvalidOperationException ex)
+            {
+                // Poslovno pravilo odbilo - prikazujemo poruku korisniku
+                TempData["Greska"] = ex.Message;
+            }
 
-            TempData["Poruka"] = "Vaša ocena je uspešno sačuvana! Top liste su ažurirane.";
             return RedirectToAction(nameof(Index));
         }
     }

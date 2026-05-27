@@ -8,24 +8,28 @@ var graditelj = WebApplication.CreateBuilder(args);
 graditelj.Services.AddControllersWithViews();
 graditelj.Services.AddSession();
 
-// EF DbContext (za EF repozitorijume - treci pristup u DAL-u)
+// HttpClient factory - koristi se u kontrolerima za pozivanje REST servisa
+graditelj.Services.AddHttpClient();
+
+// EF DbContext
 graditelj.Services.AddDbContext<AppDbContext>(opcije =>
     opcije.UseSqlServer(graditelj.Configuration.GetConnectionString("PodrazumevanaKonekcija")));
 
-// XML servis za top liste (singleton - deli se kroz celu aplikaciju)
+// XML servis za top liste
 graditelj.Services.AddSingleton<XmlTopListeServis>(provider =>
 {
     var env = provider.GetRequiredService<IWebHostEnvironment>();
     return new XmlTopListeServis(env.WebRootPath);
 });
 
-// Poslovni Proces (scoped - po zahtevu)
+// Poslovni Proces - prosledjuje se URL REST servisa
 graditelj.Services.AddScoped<PoslovniProces>(provider =>
 {
     var konfiguracija = provider.GetRequiredService<IConfiguration>();
     var xmlServis = provider.GetRequiredService<XmlTopListeServis>();
     string konekcioniString = konfiguracija.GetConnectionString("PodrazumevanaKonekcija")!;
-    return new PoslovniProces(konekcioniString, xmlServis);
+    string restApiUrl = konfiguracija["RestApiUrl"] ?? "https://localhost:7001";
+    return new PoslovniProces(konekcioniString, xmlServis, restApiUrl);
 });
 
 var aplikacija = graditelj.Build();

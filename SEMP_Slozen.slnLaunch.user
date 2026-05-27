@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "3_SLOJ_SERVISA\\SEMP_REST_API\\SEMP_REST_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

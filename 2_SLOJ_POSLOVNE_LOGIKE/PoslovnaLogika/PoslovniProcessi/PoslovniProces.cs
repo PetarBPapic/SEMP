@@ -1,37 +1,29 @@
-using BibliotekaKlasa.KlasePodataka.Modeli;
+﻿using BibliotekaKlasa.KlasePodataka.Modeli;
 using BibliotekaKlasa.KlasePodataka.Repozitorijumi;
 using BibliotekaKlasa.Servisi;
 using BibliotekaKlasa.TehnoloskeKlase;
+using System.Text.Json;
 
 namespace PoslovnaLogika.PoslovniProcessi
 {
-    /// <summary>
-    /// Klasa Poslovni Proces - centralna klasa BLL (Business Logic Layer).
-    /// Bavi se poslovnim pravilima i procesima vezanim za epizode i ocene.
-    /// 
-    /// Glavno poslovno pravilo: Top 5 i Top 10 najbolje ocenjenih epizoda.
-    /// Top liste se azuriraju sa svakom ocenom i cuvaju u XML fajlu.
-    /// Vidljive su na pocetnoj strani bez login-a i nakon prijave.
-    /// </summary>
     public class PoslovniProces
     {
         private readonly string _konekcioniString;
         private readonly XmlTopListeServis _xmlServis;
+        private readonly string _restApiUrl;
 
-        public PoslovniProces(string konekcioniString, XmlTopListeServis xmlServis)
+        public PoslovniProces(string konekcioniString, XmlTopListeServis xmlServis,
+                              string restApiUrl = "https://localhost:7001")
         {
             _konekcioniString = konekcioniString;
             _xmlServis = xmlServis;
+            _restApiUrl = restApiUrl;
         }
 
         // ============================================================
         // POSLOVNA PRAVILA - TOP LISTE
         // ============================================================
 
-        /// <summary>
-        /// Azurira Top5 i Top10 liste u XML fajlu.
-        /// Poziva se automatski nakon svake ocene (poslovno pravilo).
-        /// </summary>
         public void AzurirajTopListe()
         {
             var sve = UzmiSveEpizodeSaProsekom();
@@ -66,17 +58,32 @@ namespace PoslovnaLogika.PoslovniProcessi
         // ============================================================
 
         /// <summary>
-        /// Ocenjivanje epizode - centralni poslovni proces.
-        /// Nakon ocene automatski azurira Top liste.
+        /// POSLOVNO PRAVILO (AKO-ONDA):
+        ///   AKO je korisnik vec dao MaksOcenaPoKorisniku ocena danas
+        ///   (parametar se cita pozivom REST servisa iz JSON fajla,
+        ///   a broj danasanjih ocena se proverava stored procedurom)
+        ///   ONDA se nova ocena odbija.
         /// </summary>
         public bool OceniEpizodu(int epizodaId, int korisnikId, int vrednost, string komentar)
         {
             if (vrednost < 1 || vrednost > 5)
-                throw new ArgumentException("Ocena mora biti izmedju 1 i 5.");
+                throw new ArgumentException("Ocena mora biti između 1 i 5.");
 
+            // Korak 1: citanje parametra putem REST servisa (iz JSON fajla)
+            int maksOcena = UzmiMaksOcenaPoKorisniku();
+
+            // Korak 2: provera uslova putem stored procedure
             var konekcijaObjekat = new KonekcijaKlasa(_konekcioniString);
-            var ocenaRepo = new OcenaRepo(konekcijaObjekat);
+            var epizodaSpRepo = new EpizodaSpRepo(konekcijaObjekat);
+            int danasOcena = epizodaSpRepo.DajBrojOcenaKorisnikaDanas(korisnikId);
 
+            // Korak 3: primena ogranicenja
+            if (danasOcena >= maksOcena)
+                throw new InvalidOperationException(
+                    $"Dostigli ste dnevni limit od {maksOcena} ocena. Pokušajte ponovo sutra.");
+
+            // Korak 4: snimanje ocene
+            var ocenaRepo = new OcenaRepo(konekcijaObjekat);
             var ocenaModelObjekat = new OcenaModel
             {
                 EpizodaId = epizodaId,
@@ -85,13 +92,36 @@ namespace PoslovnaLogika.PoslovniProcessi
                 Komentar = komentar ?? "",
                 OcenjeneNa = DateTime.Now
             };
-
             ocenaRepo.IzmeniIliDodaj(ocenaModelObjekat);
 
-            // POSLOVNO PRAVILO: azuriraj Top liste odmah nakon ocene
+            // Korak 5: automatska akcija - azuriraj Top liste
             AzurirajTopListe();
 
             return true;
+        }
+
+        /// <summary>
+        /// Cita parametar MaksOcenaPoKorisniku pozivom REST servisa.
+        /// Ako servis nije dostupan, koristi podrazumevanu vrednost 50.
+        /// </summary>
+        private int UzmiMaksOcenaPoKorisniku()
+        {
+            try
+            {
+                using var klijent = new HttpClient();
+                klijent.Timeout = TimeSpan.FromSeconds(3);
+                var odgovor = klijent.GetStringAsync($"{_restApiUrl}/api/epizode/ogranicenje")
+                                     .GetAwaiter().GetResult();
+                var podaci = JsonSerializer.Deserialize<Dictionary<string, int>>(odgovor,
+                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                if (podaci != null && podaci.ContainsKey("MaksOcenaPoKorisniku"))
+                    return podaci["MaksOcenaPoKorisniku"];
+            }
+            catch
+            {
+                // Servis nije dostupan - koristimo podrazumevanu vrednost
+            }
+            return 50;
         }
 
         // ============================================================
@@ -126,27 +156,15 @@ namespace PoslovnaLogika.PoslovniProcessi
             epizodaRepo.Izmeni(epizodaModelObjekat);
         }
 
-        /// <summary>
-        /// Brise epizodu zajedno sa svim njenim ocenama.
-        /// Redosled je bitan: najpre ocene, pa epizoda (FK constraint).
-        /// Nakon brisanja azurira Top liste i resetuje ID brojac u bazi.
-        /// </summary>
         public void ObrisiEpizodu(int id)
         {
             var konekcijaObjekat = new KonekcijaKlasa(_konekcioniString);
             var ocenaRepo = new OcenaRepo(konekcijaObjekat);
             var epizodaRepo = new EpizodaRepo(konekcijaObjekat);
 
-            // Korak 1: obrisi sve ocene za ovu epizodu (FK constraint)
             ocenaRepo.ObrisiZaEpizodu(id);
-
-            // Korak 2: obrisi samu epizodu
             epizodaRepo.Obrisi(id);
-
-            // Korak 3: resetuj ID brojac da sledeca epizoda dobije najmanji slobodan ID
             epizodaRepo.ResetuiIdBrojac();
-
-            // Korak 4: azuriraj top liste jer su se ocene promenile
             AzurirajTopListe();
         }
 

@@ -11,4 +11,8 @@
     <ProjectReference Include="..\..\2_SLOJ_POSLOVNE_LOGIKE\PoslovnaLogika\PoslovnaLogika.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>

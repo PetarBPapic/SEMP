@@ -1,0 +1,121 @@
+[
+  {
+    "ContainingType": "SEMP_REST_API.Controllers.EpizodeController",
+    "Method": "DajSve",
+    "RelativePath": "api/Epizode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SEMP_REST_API.Controllers.EpizodeController",
+    "Method": "Dodaj",
+    "RelativePath": "api/Epizode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "epizodaModelObjekat",
+        "Type": "BibliotekaKlasa.KlasePodataka.Modeli.EpizodaModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SEMP_REST_API.Controllers.EpizodeController",
+    "Method": "DajPoId",
+    "RelativePath": "api/Epizode/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SEMP_REST_API.Controllers.EpizodeController",
+    "Method": "Izmeni",
+    "RelativePath": "api/Epizode/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "epizodaModelObjekat",
+        "Type": "BibliotekaKlasa.KlasePodataka.Modeli.EpizodaModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SEMP_REST_API.Controllers.EpizodeController",
+    "Method": "Obrisi",
+    "RelativePath": "api/Epizode/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SEMP_REST_API.Controllers.EpizodeController",
+    "Method": "DajOgranicenje",
+    "RelativePath": "api/Epizode/ogranicenje",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SEMP_REST_API.Controllers.EpizodeController",
+    "Method": "DajSveSortirane",
+    "RelativePath": "api/Epizode/sve-sortirane",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SEMP_REST_API.Controllers.EpizodeController",
+    "Method": "DajTop10",
+    "RelativePath": "api/Epizode/top10",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SEMP_REST_API.Controllers.EpizodeController",
+    "Method": "DajTop5",
+    "RelativePath": "api/Epizode/top5",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -1,28 +1,47 @@
 using Microsoft.AspNetCore.Mvc;
 using BibliotekaKlasa.KlasePodataka.Modeli;
-using PoslovnaLogika.PoslovniProcessi;
 using SEMP_Aplikacija.ViewModels;
+using System.Text;
+using System.Text.Json;
 
 namespace SEMP_Aplikacija.Controllers
 {
     public class EpizodaController : Controller
     {
-        private readonly PoslovniProces _poslovniProces;
+        private readonly IHttpClientFactory _httpKlijentFactory;
+        private readonly IConfiguration _konfiguracija;
 
-        public EpizodaController(PoslovniProces poslovniProces)
+        public EpizodaController(IHttpClientFactory httpKlijentFactory, IConfiguration konfiguracija)
         {
-            _poslovniProces = poslovniProces;
+            _httpKlijentFactory = httpKlijentFactory;
+            _konfiguracija = konfiguracija;
+        }
+
+        private HttpClient KreirajKlijenta()
+        {
+            var klijent = _httpKlijentFactory.CreateClient();
+            klijent.BaseAddress = new Uri(_konfiguracija["RestApiUrl"] ?? "https://localhost:7001");
+            return klijent;
         }
 
         private bool JeAdmin() => HttpContext.Session.GetString("uloga") == "admin";
 
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             if (!JeAdmin())
                 return RedirectToAction("Prijava", "Nalog");
 
-            var epizode = _poslovniProces.DajSveEpizode();
+            var klijent = KreirajKlijenta();
+            var odgovor = await klijent.GetAsync("api/epizode");
+            if (!odgovor.IsSuccessStatusCode)
+                return View(new List<EpizodaViewModel>());
+
+            var json = await odgovor.Content.ReadAsStringAsync();
+            var epizode = JsonSerializer.Deserialize<List<EpizodaModel>>(json,
+                          new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
+                          ?? new List<EpizodaModel>();
+
             var viewModeli = epizode.Select(e => new EpizodaViewModel
             {
                 Id = e.Id,
@@ -46,7 +65,7 @@ namespace SEMP_Aplikacija.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Dodaj(EpizodaViewModel viewModel)
+        public async Task<IActionResult> Dodaj(EpizodaViewModel viewModel)
         {
             if (!JeAdmin())
                 return RedirectToAction("Prijava", "Nalog");
@@ -62,17 +81,28 @@ namespace SEMP_Aplikacija.Controllers
                 KreiraoId = korisnikId
             };
 
-            _poslovniProces.DodajEpizodu(epizodaModelObjekat);
+            var klijent = KreirajKlijenta();
+            var sadrzaj = new StringContent(
+                JsonSerializer.Serialize(epizodaModelObjekat),
+                Encoding.UTF8, "application/json");
+
+            await klijent.PostAsync("api/epizode", sadrzaj);
             return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
-        public IActionResult Izmeni(int id)
+        public async Task<IActionResult> Izmeni(int id)
         {
             if (!JeAdmin())
                 return RedirectToAction("Prijava", "Nalog");
 
-            var ep = _poslovniProces.DajEpizodu(id);
+            var klijent = KreirajKlijenta();
+            var odgovor = await klijent.GetAsync($"api/epizode/{id}");
+            if (!odgovor.IsSuccessStatusCode) return NotFound();
+
+            var json = await odgovor.Content.ReadAsStringAsync();
+            var ep = JsonSerializer.Deserialize<EpizodaModel>(json,
+                       new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
             if (ep == null) return NotFound();
 
             return View(new EpizodaViewModel
@@ -87,7 +117,7 @@ namespace SEMP_Aplikacija.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Izmeni(EpizodaViewModel viewModel)
+        public async Task<IActionResult> Izmeni(EpizodaViewModel viewModel)
         {
             if (!JeAdmin())
                 return RedirectToAction("Prijava", "Nalog");
@@ -103,18 +133,24 @@ namespace SEMP_Aplikacija.Controllers
                 KreiraoId = viewModel.KreiraoId
             };
 
-            _poslovniProces.IzmeniEpizodu(epizodaModelObjekat);
+            var klijent = KreirajKlijenta();
+            var sadrzaj = new StringContent(
+                JsonSerializer.Serialize(epizodaModelObjekat),
+                Encoding.UTF8, "application/json");
+
+            await klijent.PutAsync($"api/epizode/{viewModel.Id}", sadrzaj);
             return RedirectToAction(nameof(Index));
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Obrisi(int id)
+        public async Task<IActionResult> Obrisi(int id)
         {
             if (!JeAdmin())
                 return Forbid();
 
-            _poslovniProces.ObrisiEpizodu(id);
+            var klijent = KreirajKlijenta();
+            await klijent.DeleteAsync($"api/epizode/{id}");
             return RedirectToAction(nameof(Index));
         }
     }

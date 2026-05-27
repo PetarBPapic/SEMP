@@ -86,5 +86,21 @@ namespace SEMP_REST_API.Controllers
             pp.ObrisiEpizodu(id);
             return Ok(new { poruka = "Epizoda uspešno obrisana." });
         }
+
+        [HttpGet("ogranicenje")]
+        public IActionResult DajOgranicenje()
+        {
+            string putanja = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "Ogranicenja", "ogranicenjeUpisa.json");
+            if (!System.IO.File.Exists(putanja))
+                return NotFound(new { poruka = "JSON fajl sa ograničenjem nije pronađen." });
+
+            string json = System.IO.File.ReadAllText(putanja);
+            var podaci = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, int>>(json);
+
+            if (podaci == null || !podaci.ContainsKey("MaksOcenaPoKorisniku"))
+                return BadRequest(new { poruka = "MaksOcenaPoKorisniku nije definisano u JSON-u." });
+
+            return Ok(new { MaksOcenaPoKorisniku = podaci["MaksOcenaPoKorisniku"] });
+        }
     }
 }

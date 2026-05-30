@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BibliotekaKlasa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98b1e0285349ed6275f8e2836ed0324c5bb49c41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35af161abb9dd3718b140e6706e3d410ec1331b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("BibliotekaKlasa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BibliotekaKlasa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

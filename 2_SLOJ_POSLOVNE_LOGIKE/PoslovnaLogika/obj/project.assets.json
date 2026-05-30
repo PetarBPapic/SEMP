@@ -2364,23 +2364,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\papic\\.nuget\\packages\\": {},
+    "C:\\Users\\Petar Papic\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\papic\\OneDrive\\Desktop\\Git\\SEMP\\2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovnaLogika.csproj",
+      "projectUniqueName": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovnaLogika.csproj",
       "projectName": "PoslovnaLogika",
-      "projectPath": "C:\\Users\\papic\\OneDrive\\Desktop\\Git\\SEMP\\2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovnaLogika.csproj",
-      "packagesPath": "C:\\Users\\papic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\papic\\OneDrive\\Desktop\\Git\\SEMP\\2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\obj\\",
+      "projectPath": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovnaLogika.csproj",
+      "packagesPath": "C:\\Users\\Petar Papic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\papic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Petar Papic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2389,15 +2389,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\papic\\OneDrive\\Desktop\\Git\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj": {
-              "projectPath": "C:\\Users\\papic\\OneDrive\\Desktop\\Git\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj"
+            "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj": {
+              "projectPath": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj"
             }
           }
         }
@@ -2433,7 +2432,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -23,3 +23,16 @@ C:\Users\Petar Papic\Desktop\Pera\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug
 C:\Users\Petar Papic\Desktop\Pera\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\BibliotekaKlasa.pdb
 C:\Users\Petar Papic\Desktop\Pera\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\ref\BibliotekaKlasa.dll
 C:\Users\Petar Papic\Desktop\Pera\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\BibliotekaKlasa.sourcelink.json
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\bin\Debug\net8.0\BibliotekaKlasa.deps.json
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\bin\Debug\net8.0\BibliotekaKlasa.dll
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\bin\Debug\net8.0\BibliotekaKlasa.pdb
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\BibliotekaKlasa.csproj.AssemblyReference.cache
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\BibliotekaKlasa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\BibliotekaKlasa.AssemblyInfoInputs.cache
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\BibliotekaKlasa.AssemblyInfo.cs
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\BibliotekaKlasa.csproj.CoreCompileInputs.cache
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\BibliotekaKlasa.sourcelink.json
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\BibliotekaKlasa.dll
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\refint\BibliotekaKlasa.dll
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\BibliotekaKlasa.pdb
+C:\Users\papic\OneDrive\Desktop\Git\SEMP\1_SLOJ_PODATAKA\BibliotekaKlasa\obj\Debug\net8.0\ref\BibliotekaKlasa.dll

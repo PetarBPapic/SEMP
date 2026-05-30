@@ -2,9 +2,13 @@ using Microsoft.Data.SqlClient;
 
 namespace BibliotekaKlasa.TehnoloskeKlase
 {
+    /// <summary>
+    /// Bazna klasa za upravljanje SQL konekcijom.
+    /// Sadrzi zajednicki kod koji nasledjuju sve konkretne konekcijske klase.
+    /// </summary>
     public class BaznaKonekcijaNova
     {
-        private SqlConnection? konekcija;
+        protected SqlConnection? _konekcija;
         public string KonekcioniString { get; set; }
 
         public BaznaKonekcijaNova(string konekcioniString)
@@ -12,17 +16,17 @@ namespace BibliotekaKlasa.TehnoloskeKlase
             this.KonekcioniString = konekcioniString;
         }
 
-        public void OtvoriKonekciju()
+        public virtual void OtvoriKonekciju()
         {
-            konekcija = new SqlConnection(KonekcioniString);
-            konekcija.Open();
+            _konekcija = new SqlConnection(KonekcioniString);
+            _konekcija.Open();
         }
 
-        public void ZatvoriKonekciju()
+        public virtual void ZatvoriKonekciju()
         {
-            if (konekcija != null && konekcija.State == System.Data.ConnectionState.Open)
+            if (_konekcija != null && _konekcija.State == System.Data.ConnectionState.Open)
             {
-                konekcija.Close();
+                _konekcija.Close();
             }
         }
     }

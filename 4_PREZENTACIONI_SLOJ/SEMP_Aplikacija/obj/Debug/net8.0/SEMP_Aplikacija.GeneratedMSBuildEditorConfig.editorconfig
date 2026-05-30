@@ -9,69 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SEMP_Aplikacija
 build_property.RootNamespace = SEMP_Aplikacija
-build_property.ProjectDir = C:\Users\Petar Papic\Desktop\Pera\SEMP\4_PREZENTACIONI_SLOJ\SEMP_Aplikacija\
+build_property.ProjectDir = C:\Users\papic\OneDrive\Desktop\Git\SEMP\4_PREZENTACIONI_SLOJ\SEMP_Aplikacija\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Petar Papic\Desktop\Pera\SEMP\4_PREZENTACIONI_SLOJ\SEMP_Aplikacija
+build_property.MSBuildProjectDirectory = C:\Users\papic\OneDrive\Desktop\Git\SEMP\4_PREZENTACIONI_SLOJ\SEMP_Aplikacija
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Epizoda/Dodaj.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Epizoda/Dodaj.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBpem9kYVxEb2Rhai5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Epizoda/Index.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Epizoda/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBpem9kYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Epizoda/Izmeni.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Epizoda/Izmeni.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBpem9kYVxJem1lbmkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Nalog/Prijava.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Nalog/Prijava.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFsb2dcUHJpamF2YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Ocena/Index.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Ocena/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NlbmFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Ocena/Oceni.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Ocena/Oceni.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NlbmFcT2NlbmkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Ocena/RangLista.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Ocena/RangLista.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NlbmFcUmFuZ0xpc3RhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Ocena/Stampa.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Ocena/Stampa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NlbmFcU3RhbXBhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Pocetna/Index.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Pocetna/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9jZXRuYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Shared/Greska.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Shared/Greska.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdyZXNrYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Shared/_Layout.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/_ViewImports.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Petar Papic/Desktop/Pera/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/_ViewStart.cshtml]
+[C:/Users/papic/OneDrive/Desktop/Git/SEMP/4_PREZENTACIONI_SLOJ/SEMP_Aplikacija/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

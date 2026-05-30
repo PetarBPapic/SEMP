@@ -3,42 +3,13 @@ using Microsoft.Data.SqlClient;
 namespace BibliotekaKlasa.TehnoloskeKlase
 {
     /// <summary>
-    /// CRC:
-    /// Responsibility - ODGOVORNOST: Upravljanje konekcijom ka SQL Server bazi podataka
-    /// Collaboration - zavisi od standardne klase SqlConnection iz biblioteke Microsoft.Data.SqlClient
+    /// Nasledjuje BaznaKonekcijaNova i prosiruje je metodom DajKonekciju()
+    /// koja vraca aktivni SqlConnection objekat za izvrsavanje upita.
     /// </summary>
-    public class KonekcijaKlasa
+    public class KonekcijaKlasa : BaznaKonekcijaNova
     {
-        #region Atributi
-
-        private SqlConnection? _konekcija;
-        public string KonekcioniString { get; set; }
-
-        #endregion
-
-        #region Konstruktor
-
-        public KonekcijaKlasa(string konekcioniString)
+        public KonekcijaKlasa(string konekcioniString) : base(konekcioniString)
         {
-            KonekcioniString = konekcioniString;
-        }
-
-        #endregion
-
-        #region Javne metode
-
-        public void OtvoriKonekciju()
-        {
-            _konekcija = new SqlConnection(KonekcioniString);
-            _konekcija.Open();
-        }
-
-        public void ZatvoriKonekciju()
-        {
-            if (_konekcija != null && _konekcija.State == System.Data.ConnectionState.Open)
-            {
-                _konekcija.Close();
-            }
         }
 
         public SqlConnection DajKonekciju()
@@ -47,7 +18,5 @@ namespace BibliotekaKlasa.TehnoloskeKlase
                 throw new InvalidOperationException("Konekcija nije otvorena. Pozovite OtvoriKonekciju() pre poziva DajKonekciju().");
             return _konekcija;
         }
-
-        #endregion
     }
 }

@@ -4,13 +4,10 @@ using BibliotekaKlasa.TehnoloskeKlase;
 
 namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
 {
-    public class KorisnikRepo
+    public class KorisnikRepo : BaseRepo
     {
-        public KonekcijaKlasa _konekcijaObjekat { get; set; }
-
-        public KorisnikRepo(KonekcijaKlasa konekcijaObjekat)
+        public KorisnikRepo(KonekcijaKlasa konekcijaObjekat) : base(konekcijaObjekat)
         {
-            _konekcijaObjekat = konekcijaObjekat;
         }
 
         public void Dodaj(KorisnikModel korisnikModelObjekat)

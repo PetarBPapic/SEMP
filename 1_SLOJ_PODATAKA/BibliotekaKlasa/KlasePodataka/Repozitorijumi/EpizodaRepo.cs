@@ -4,13 +4,10 @@ using BibliotekaKlasa.TehnoloskeKlase;
 
 namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
 {
-    public class EpizodaRepo
+    public class EpizodaRepo : BaseRepo
     {
-        public KonekcijaKlasa _konekcijaObjekat { get; set; }
-
-        public EpizodaRepo(KonekcijaKlasa konekcijaObjekat)
+        public EpizodaRepo(KonekcijaKlasa konekcijaObjekat) : base(konekcijaObjekat)
         {
-            _konekcijaObjekat = konekcijaObjekat;
         }
 
         public void Dodaj(EpizodaModel epizodaModelObjekat)

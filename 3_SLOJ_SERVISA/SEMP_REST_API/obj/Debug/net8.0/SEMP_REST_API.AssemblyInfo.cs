@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SEMP_REST_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+403c0256c5b703c07529ce2dd4d9a884ab4a9923")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98b1e0285349ed6275f8e2836ed0324c5bb49c41")]
 [assembly: System.Reflection.AssemblyProductAttribute("SEMP_REST_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SEMP_REST_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -7,14 +7,12 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
     /// <summary>
     /// Repozitorijum za Ocene - koristi TabelaKlasa (DataSet pristup) kao drugi primer nasledjivanja u DAL-u.
     /// </summary>
-    public class OcenaRepo
+    public class OcenaRepo : BaseRepo
     {
-        public KonekcijaKlasa _konekcijaObjekat { get; set; }
         private TabelaKlasa _tabelaObjekat { get; set; }
 
-        public OcenaRepo(KonekcijaKlasa konekcijaObjekat)
+        public OcenaRepo(KonekcijaKlasa konekcijaObjekat) : base(konekcijaObjekat)
         {
-            _konekcijaObjekat = konekcijaObjekat;
             _tabelaObjekat = new TabelaKlasa(konekcijaObjekat, "Ocene");
         }
 

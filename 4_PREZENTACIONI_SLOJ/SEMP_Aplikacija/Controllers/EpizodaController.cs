@@ -130,7 +130,8 @@ namespace SEMP_Aplikacija.Controllers
                 Naslov = viewModel.Naslov,
                 Opis = viewModel.Opis,
                 DatumPremijere = viewModel.DatumPremijere,
-                KreiraoId = viewModel.KreiraoId
+                KreiraoId = viewModel.KreiraoId,
+                ZarnIdz = viewModel.KreiraoId
             };
 
             var klijent = KreirajKlijenta();

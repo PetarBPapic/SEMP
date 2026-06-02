@@ -39,7 +39,22 @@ namespace SEMP_Aplikacija.ViewModels
         [DataType(DataType.Date)]
         public DateTime DatumPremijere { get; set; } = DateTime.Today;
 
+        public int ZarnIdz { get; set; }
+
         public int KreiraoId { get; set; }
+    }
+
+    public class ZarnViewModel
+    {
+        public int Idz { get; set; }
+        [Required(ErrorMessage = "Naziv je obavezan.")]
+        [MaxLength(128)]
+        [Display(Name = "Naziv")]
+        public string Naziv { get; set; } = string.Empty;
+
+        [Display(Name = "Opis")]
+        [MaxLength(512)]
+        public string Opis { get; set; } = string.Empty;
     }
 
     public class OcenaViewModel

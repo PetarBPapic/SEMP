@@ -16,6 +16,7 @@
                 <th>Naslov</th>
                 <th>Opis</th>
                 <th>Datum premijere</th>
+                <th>ZarnIdz</th>
                 <th>Akcije</th>
             </tr>
         </thead>
@@ -26,6 +27,7 @@
                     <td>@ep.Id</td>
                     <td>@ep.Naslov</td>
                     <td>@(ep.Opis.Length > 60 ? ep.Opis.Substring(0, 60) + "..." : ep.Opis)</td>
+                    <td>@ep.ZarnIdz</td>
                     <td>@ep.DatumPremijere.ToString("dd.MM.yyyy")</td>
                     <td>
                         <a asp-action="Izmeni" asp-route-id="@ep.Id" class="btn btn-sm btn-primary me-1">Izmeni</a>

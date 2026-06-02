@@ -75,6 +75,7 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
             komanda.Parameters.AddWithValue("@Opis", epizodaModelObjekat.Opis);
             komanda.Parameters.AddWithValue("@DatumPremijere", epizodaModelObjekat.DatumPremijere);
             komanda.Parameters.AddWithValue("@KreiraoId", epizodaModelObjekat.KreiraoId);
+            komanda.Parameters.AddWithValue("@ZarnIdz", epizodaModelObjekat.KreiraoId);
             komanda.ExecuteNonQuery();
 
             _konekcijaObjekat.ZatvoriKonekciju();

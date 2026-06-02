@@ -7,5 +7,7 @@ namespace BibliotekaKlasa.KlasePodataka.Modeli
         public string Opis { get; set; } = string.Empty;
         public DateTime DatumPremijere { get; set; }
         public int KreiraoId { get; set; }
+
+        public int ZarnIdz { get; set; }
     }
 }

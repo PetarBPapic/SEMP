@@ -34,14 +34,25 @@ CREATE TABLE Korisnici (
 );
 GO
 
+CREATE TABLE Zarn (
+    Idz INT IDENTITY(1,1) PRIMARY KEY,
+    Naziv NVARCHAR(128) NOT NULL,
+    Opis NVARCHAR(512) NOT NULL
+);
+GO
+
+
 CREATE TABLE Epizode (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     Naslov NVARCHAR(128) NOT NULL,
     Opis NVARCHAR(512) NOT NULL,
     DatumPremijere DATETIME NOT NULL,
     KreiraoId INT NOT NULL,
+	ZarnIdz INT NOT NULL,
     CONSTRAINT FK_Epizode_Korisnici FOREIGN KEY (KreiraoId)
-        REFERENCES Korisnici(Id)
+        REFERENCES Korisnici(Id),
+	CONSTRAINT FK_Epizode_Zarn FOREIGN KEY (ZarnIdz)
+        REFERENCES Zarn(Idz)
 );
 GO
 
@@ -73,49 +84,68 @@ INSERT INTO Korisnici (KorisnickoIme, Lozinka, Uloga) VALUES
 GO
 
 -- ============================================================
+-- SEED PODACI - Zarn
+-- ============================================================
+
+INSERT INTO Zarn(Naziv, Opis, Idz) VALUES
+('Horor',
+ 'Strasna epizoda, nije za decu.',
+ 1),
+ ('Komedija',
+ 'Smesna Epizoda.',
+ 2),
+ ('Akcija',
+ 'Dosta akcije.',
+ 3),
+ ('Crtani',
+ 'Animirana epizoda za decu.',
+ 4);
+ GO
+
+-- ============================================================
 -- SEED PODACI - Epizode
 -- ============================================================
 
-INSERT INTO Epizode (Naslov, Opis, DatumPremijere, KreiraoId) VALUES
+INSERT INTO Epizode (Naslov, Opis, DatumPremijere, KreiraoId, ZarnIdz) VALUES
 ('Pilot - Pocetak Svega',
  'Uvod u svet serije. Upoznajemo glavne likove i pocetnu situaciju koja ce promeniti sve.',
- '2024-01-15', 1),
+ '2024-01-15', 1, 3),
 
 ('Tajna Proslost',
  'Otkriva se misterija iz proslosti glavnog lika. Nista nije onako kako se cinilo.',
- '2024-01-22', 1),
+ '2024-01-22', 1, 2),
 
 ('Izdaja',
  'Neko iz ekipe prelazi na drugu stranu. Prijateljstvo je stavljeno na tesku probu.',
- '2024-01-29', 1),
+ '2024-01-29', 1, 3),
 
 ('Povratak',
  'Lik kojeg smo izgubili se vraca - ali promenjen. Da li je to ista osoba?',
- '2024-02-05', 1),
+ '2024-02-05', 1, 4),
 
 ('Finalna Bitka',
  'Sve se zbiva u ovu jednu noc. Sudbine svih likova se odlucuju. Ko ce preziveti?',
- '2024-02-12', 1),
+ '2024-02-12', 1, 3),
 
 ('Epilog',
  'Kako su se stvari zavrsile. Zatvaranje prvih prica i nagovestaj novog pocetka.',
- '2024-02-19', 1),
+ '2024-02-19', 1, 1),
 
 ('Novi Poceci',
  'Druga sezona pocinje. Novi likovi ulaze u igru, novi problemi se pojavljuju.',
- '2024-09-01', 1),
+ '2024-09-01', 1, 2),
 
 ('Mracni Grad',
  'Istraga u gradu prepunom tajni. Svako ima nesto da krije.',
- '2024-09-08', 1),
+ '2024-09-08', 1, 1),
 
 ('Izgubljena Uspomena',
  'Neko nema secanja. Ali neko ih ima previse. Sta se zapravo desilo one noci?',
- '2024-09-15', 1),
+ '2024-09-15', 1, 1),
 
 ('Zora',
  'Vrhunac druge sezone. Sve dolazi na naplatu. Nista nece biti isto posle ovoga.',
- '2024-09-22', 1);
+ '2024-09-22', 1, 1);
 GO
 
 -- ============================================================

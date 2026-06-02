@@ -20,6 +20,7 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
             komanda.Parameters.AddWithValue("@Opis", epizodaModelObjekat.Opis);
             komanda.Parameters.AddWithValue("@DatumPremijere", epizodaModelObjekat.DatumPremijere);
             komanda.Parameters.AddWithValue("@KreiraoId", epizodaModelObjekat.KreiraoId);
+            komanda.Parameters.AddWithValue("@ZarnIdz", epizodaModelObjekat.ZarnIdz);
             komanda.ExecuteNonQuery();
             _konekcijaObjekat.ZatvoriKonekciju();
         }
@@ -35,6 +36,7 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
             komanda.Parameters.AddWithValue("@Opis", epizodaModelObjekat.Opis);
             komanda.Parameters.AddWithValue("@DatumPremijere", epizodaModelObjekat.DatumPremijere);
             komanda.Parameters.AddWithValue("@Id", epizodaModelObjekat.Id);
+            komanda.Parameters.AddWithValue("@ZarnIdz", epizodaModelObjekat.ZarnIdz);
             komanda.ExecuteNonQuery();
             _konekcijaObjekat.ZatvoriKonekciju();
         }
@@ -69,7 +71,7 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
         {
             var lista = new List<EpizodaModel>();
             _konekcijaObjekat.OtvoriKonekciju();
-            string upit = @"SELECT Id, Naslov, Opis, DatumPremijere, KreiraoId 
+            string upit = @"SELECT Id, Naslov, Opis, DatumPremijere, KreiraoId, ZarnIdz 
                             FROM Epizode 
                             ORDER BY DatumPremijere DESC";
             using var komanda = new SqlCommand(upit, _konekcijaObjekat.DajKonekciju());
@@ -82,7 +84,8 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
                     Naslov = citac.GetString(1),
                     Opis = citac.GetString(2),
                     DatumPremijere = citac.GetDateTime(3),
-                    KreiraoId = citac.GetInt32(4)
+                    KreiraoId = citac.GetInt32(4),
+                    ZarnIdz = citac.GetInt32(4)
                 });
             }
             _konekcijaObjekat.ZatvoriKonekciju();

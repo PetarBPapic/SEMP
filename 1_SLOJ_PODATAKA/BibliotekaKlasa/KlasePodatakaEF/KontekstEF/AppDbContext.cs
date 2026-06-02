@@ -8,6 +8,7 @@ namespace BibliotekaKlasa.KlasePodatakaEF.KontekstEF
         public AppDbContext(DbContextOptions<AppDbContext> opcije) : base(opcije) { }
 
         public DbSet<KorisnikEntityModel> KorisniciEntityModelObjektiDBSet { get; set; }
+        public DbSet<ZarnEntityModel> ZarnEntityModelObjektiDBSet { get; set; }
         public DbSet<EpizodaEntityModel> EpizodeEntityModelObjektiDBSet { get; set; }
         public DbSet<OcenaEntityModel> OceneEntityModelObjektiDBSet { get; set; }
 
@@ -17,10 +18,14 @@ namespace BibliotekaKlasa.KlasePodatakaEF.KontekstEF
                 .HasIndex(k => k.KorisnickoIme)
                 .IsUnique();
 
+            graditelj.Entity<ZarnEntityModel>()
+                .HasIndex(k => k.ZarnIdz);
+
             graditelj.Entity<EpizodaEntityModel>()
                 .HasOne(e => e.Kreator)
                 .WithMany()
                 .HasForeignKey(e => e.KreiraoId)
+                .HasForeignKey(e => e.ZarnIdz)
                 .OnDelete(DeleteBehavior.Restrict);
 
             graditelj.Entity<OcenaEntityModel>()

@@ -5,6 +5,7 @@ namespace BibliotekaKlasa.KlasePodataka.Modeli
         public int EpizodaId { get; set; }
         public string Naslov { get; set; } = string.Empty;
         public string Opis { get; set; } = string.Empty;
+        public int Zarn { get; set; }
         public double ProsecnaOcena { get; set; }
         public int BrojOcena { get; set; }
         public DateTime DatumPremijere { get; set; }

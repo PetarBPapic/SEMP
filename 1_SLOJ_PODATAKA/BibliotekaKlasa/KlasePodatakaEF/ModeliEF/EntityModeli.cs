@@ -21,6 +21,16 @@ namespace BibliotekaKlasa.KlasePodatakaEF.ModeliEF
         public string Uloga { get; set; } = "korisnik";
     }
 
+    [Table("Zarn")]
+    public class ZarnEntityModel
+    {
+        [Key]
+        public int ZarnIdz { get; set; }
+        [Required]
+        [MaxLength(128)]
+        public string Naziv { get; set; } = string.Empty;
+    }
+
     [Table("Epizode")]
     public class EpizodaEntityModel
     {
@@ -40,6 +50,11 @@ namespace BibliotekaKlasa.KlasePodatakaEF.ModeliEF
 
         [ForeignKey("KreiraoId")]
         public KorisnikEntityModel? Kreator { get; set; }
+
+        public int ZarnIdz { get; set; }
+
+        [ForeignKey("ZarnIdz")]
+        public KorisnikEntityModel? Zarn { get; set; }
     }
 
     [Table("Ocene")]

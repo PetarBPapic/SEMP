@@ -83,6 +83,9 @@ INSERT INTO Korisnici (KorisnickoIme, Lozinka, Uloga) VALUES
 ('jovana', 'jovana123', 'korisnik');
 GO
 
+SET IDENTITY_INSERT Zarn ON
+GO
+
 -- ============================================================
 -- SEED PODACI - Zarn
 -- ============================================================
@@ -207,4 +210,64 @@ GO
 PRINT '✓ Baza SEMP2025SLOZEN uspesno kreirana!';
 PRINT '✓ Korisnici, Epizode i Ocene su popunjeni.';
 PRINT '✓ Mozete pokrenuti aplikaciju.';
+GO
+
+
+
+
+
+
+
+USE SEMP2025SLOZEN;
+GO
+
+IF OBJECT_ID('sp_DajSveEpizode', 'P') IS NOT NULL DROP PROCEDURE sp_DajSveEpizode;
+GO
+CREATE PROCEDURE sp_DajSveEpizode
+AS
+BEGIN
+    SELECT Id, Naslov, Opis, DatumPremijere, KreiraoId, ZarnIdz
+    FROM Epizode
+    ORDER BY DatumPremijere DESC;
+END
+GO
+
+IF OBJECT_ID('sp_DajEpizodu', 'P') IS NOT NULL DROP PROCEDURE sp_DajEpizodu;
+GO
+CREATE PROCEDURE sp_DajEpizodu
+    @Id INT
+AS
+BEGIN
+    SELECT Id, Naslov, Opis, DatumPremijere, KreiraoId, ZarnIdz
+    FROM Epizode
+    WHERE Id = @Id;
+END
+GO
+
+IF OBJECT_ID('sp_DodajEpizodu', 'P') IS NOT NULL DROP PROCEDURE sp_DodajEpizodu;
+GO
+CREATE PROCEDURE sp_DodajEpizodu
+    @Naslov         NVARCHAR(128),
+    @Opis           NVARCHAR(512),
+    @DatumPremijere DATETIME,
+    @KreiraoId      INT,
+    @ZarnIdz        INT
+AS
+BEGIN
+    INSERT INTO Epizode (Naslov, Opis, DatumPremijere, KreiraoId, ZarnIdz)
+    VALUES (@Naslov, @Opis, @DatumPremijere, @KreiraoId, @ZarnIdz);
+END
+GO
+
+IF OBJECT_ID('sp_BrojOcenaKorisnikaDanas', 'P') IS NOT NULL DROP PROCEDURE sp_BrojOcenaKorisnikaDanas;
+GO
+CREATE PROCEDURE sp_BrojOcenaKorisnikaDanas
+    @KorisnikId INT
+AS
+BEGIN
+    SELECT COUNT(*)
+    FROM Ocene
+    WHERE KorisnikId = @KorisnikId
+      AND CAST(OcenjeneNa AS DATE) = CAST(GETDATE() AS DATE);
+END
 GO

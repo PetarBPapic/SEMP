@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using BibliotekaKlasa.KlasePodataka.Modeli;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace SEMP_Aplikacija.ViewModels
 {
@@ -39,9 +40,14 @@ namespace SEMP_Aplikacija.ViewModels
         [DataType(DataType.Date)]
         public DateTime DatumPremijere { get; set; } = DateTime.Today;
 
+        [Required(ErrorMessage = "Žanr je obavezan.")]
+        [Display(Name = "Žanr")]
         public int ZarnIdz { get; set; }
 
         public int KreiraoId { get; set; }
+
+        // Za dropdown u View-u
+        public List<SelectListItem> ZarnLista { get; set; } = new();
     }
 
     public class ZarnViewModel

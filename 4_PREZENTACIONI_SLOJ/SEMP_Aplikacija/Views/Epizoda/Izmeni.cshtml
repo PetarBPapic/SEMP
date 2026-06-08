@@ -27,6 +27,13 @@
                         <input asp-for="DatumPremijere" type="date" class="form-control bg-dark text-white border-secondary" />
                         <span asp-validation-for="DatumPremijere" class="text-danger small"></span>
                     </div>
+                    <div class="mb-3">
+                        <label asp-for="ZarnIdz" class="form-label text-warning">Žanr</label>
+                        <select asp-for="ZarnIdz" asp-items="Model.ZarnLista" class="form-select bg-dark text-white border-secondary">
+                            <option value="">-- Izaberi žanr --</option>
+                        </select>
+                        <span asp-validation-for="ZarnIdz" class="text-danger small"></span>
+                    </div>
                     <div class="d-flex gap-2">
                         <button type="submit" class="btn btn-warning flex-grow-1">Sacuvaj izmene</button>
                         <a asp-action="Index" class="btn btn-outline-secondary">Otkazi</a>

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using BibliotekaKlasa.KlasePodataka.Modeli;
 using SEMP_Aplikacija.ViewModels;
 using System.Text;
@@ -26,6 +27,25 @@ namespace SEMP_Aplikacija.Controllers
 
         private bool JeAdmin() => HttpContext.Session.GetString("uloga") == "admin";
 
+        private async Task<List<SelectListItem>> UcitajZarnListu()
+        {
+            var klijent = KreirajKlijenta();
+            var odgovor = await klijent.GetAsync("api/zarn");
+            if (!odgovor.IsSuccessStatusCode)
+                return new List<SelectListItem>();
+
+            var json = await odgovor.Content.ReadAsStringAsync();
+            var zarni = JsonSerializer.Deserialize<List<ZarnModel>>(json,
+                        new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
+                        ?? new List<ZarnModel>();
+
+            return zarni.Select(z => new SelectListItem
+            {
+                Value = z.Idz.ToString(),
+                Text = z.Naziv
+            }).ToList();
+        }
+
         [HttpGet]
         public async Task<IActionResult> Index()
         {
@@ -42,25 +62,31 @@ namespace SEMP_Aplikacija.Controllers
                           new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
                           ?? new List<EpizodaModel>();
 
+            var zarni = await UcitajZarnListu();
+
             var viewModeli = epizode.Select(e => new EpizodaViewModel
             {
                 Id = e.Id,
                 Naslov = e.Naslov,
                 Opis = e.Opis,
                 DatumPremijere = e.DatumPremijere,
-                KreiraoId = e.KreiraoId
+                KreiraoId = e.KreiraoId,
+                ZarnIdz = e.ZarnIdz,
+                ZarnNaziv = zarni.FirstOrDefault(z => z.Value == e.ZarnIdz.ToString())?.Text ?? "?"
             }).ToList();
 
             return View(viewModeli);
         }
 
         [HttpGet]
-        public IActionResult Dodaj()
+        public async Task<IActionResult> Dodaj()
         {
             if (!JeAdmin())
                 return RedirectToAction("Prijava", "Nalog");
 
-            return View(new EpizodaViewModel());
+            var vm = new EpizodaViewModel();
+            vm.ZarnLista = await UcitajZarnListu();
+            return View(vm);
         }
 
         [HttpPost]
@@ -70,7 +96,11 @@ namespace SEMP_Aplikacija.Controllers
             if (!JeAdmin())
                 return RedirectToAction("Prijava", "Nalog");
 
-            if (!ModelState.IsValid) return View(viewModel);
+            if (!ModelState.IsValid)
+            {
+                viewModel.ZarnLista = await UcitajZarnListu();
+                return View(viewModel);
+            }
 
             int korisnikId = int.Parse(HttpContext.Session.GetString("uid")!);
             var epizodaModelObjekat = new EpizodaModel
@@ -78,7 +108,8 @@ namespace SEMP_Aplikacija.Controllers
                 Naslov = viewModel.Naslov,
                 Opis = viewModel.Opis,
                 DatumPremijere = viewModel.DatumPremijere,
-                KreiraoId = korisnikId
+                KreiraoId = korisnikId,
+                ZarnIdz = viewModel.ZarnIdz
             };
 
             var klijent = KreirajKlijenta();
@@ -105,14 +136,17 @@ namespace SEMP_Aplikacija.Controllers
                        new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
             if (ep == null) return NotFound();
 
-            return View(new EpizodaViewModel
+            var vm = new EpizodaViewModel
             {
                 Id = ep.Id,
                 Naslov = ep.Naslov,
                 Opis = ep.Opis,
                 DatumPremijere = ep.DatumPremijere,
-                KreiraoId = ep.KreiraoId
-            });
+                KreiraoId = ep.KreiraoId,
+                ZarnIdz = ep.ZarnIdz
+            };
+            vm.ZarnLista = await UcitajZarnListu();
+            return View(vm);
         }
 
         [HttpPost]
@@ -122,7 +156,11 @@ namespace SEMP_Aplikacija.Controllers
             if (!JeAdmin())
                 return RedirectToAction("Prijava", "Nalog");
 
-            if (!ModelState.IsValid) return View(viewModel);
+            if (!ModelState.IsValid)
+            {
+                viewModel.ZarnLista = await UcitajZarnListu();
+                return View(viewModel);
+            }
 
             var epizodaModelObjekat = new EpizodaModel
             {
@@ -131,7 +169,7 @@ namespace SEMP_Aplikacija.Controllers
                 Opis = viewModel.Opis,
                 DatumPremijere = viewModel.DatumPremijere,
                 KreiraoId = viewModel.KreiraoId,
-                ZarnIdz = viewModel.KreiraoId
+                ZarnIdz = viewModel.ZarnIdz
             };
 
             var klijent = KreirajKlijenta();

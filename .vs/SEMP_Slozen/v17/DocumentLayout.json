@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\views\\epizoda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\views\\epizoda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\controllers\\epizodacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\controllers\\epizodacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\viewmodels\\viewmodeli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\viewmodels\\viewmodeli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\views\\epizoda\\izmeni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\views\\epizoda\\izmeni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\views\\epizoda\\dodaj.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\views\\epizoda\\dodaj.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3333333-3333-3333-3333-333333333333}|3_SLOJ_SERVISA\\SEMP_REST_API\\SEMP_REST_API.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\3_sloj_servisa\\semp_rest_api\\controllers\\zarncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3333333-3333-3333-3333-333333333333}|3_SLOJ_SERVISA\\SEMP_REST_API\\SEMP_REST_API.csproj|solutionrelative:3_sloj_servisa\\semp_rest_api\\controllers\\zarncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2222222-2222-2222-2222-222222222222}|2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovnaLogika.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\2_sloj_poslovne_logike\\poslovnalogika\\poslovniprocessi\\poslovniproces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2222222-2222-2222-2222-222222222222}|2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovnaLogika.csproj|solutionrelative:2_sloj_poslovne_logike\\poslovnalogika\\poslovniprocessi\\poslovniproces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\repozitorijumi\\epizodasprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\repozitorijumi\\epizodasprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\repozitorijumi\\epizodarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\repozitorijumi\\epizodarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\repozitorijumi\\zarnrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\repozitorijumi\\zarnrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\modeli\\zarnmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\modeli\\zarnmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\modeli\\ocenamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\modeli\\ocenamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\modeli\\epizodamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,24 +63,8 @@
       "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodatakaef\\modelief\\entitymodeli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\viewmodels\\viewmodeli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\viewmodels\\viewmodeli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\controllers\\epizodacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\controllers\\epizodacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\repozitorijumi\\epizodarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\repozitorijumi\\epizodarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\repozitorijumi\\epizodasprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\repozitorijumi\\epizodasprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\repozitorijumi\\korisnikrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,14 +103,6 @@
       "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\views\\epizoda\\izmeni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\views\\epizoda\\izmeni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\4_prezentacioni_sloj\\semp_aplikacija\\views\\epizoda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D4444444-4444-4444-4444-444444444444}|4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\SEMP_Aplikacija.csproj|solutionrelative:4_prezentacioni_sloj\\semp_aplikacija\\views\\epizoda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodatakaef\\kontekstef\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodatakaef\\kontekstef\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -115,10 +135,6 @@
       "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodatakaef\\repozitorijumief\\epizodaocenaefrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\modeli\\ocenamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\modeli\\ocenamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\modeli\\korisnikmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1111111-1111-1111-1111-111111111111}|1_SLOJ_PODATAKA\\BibliotekaKlasa\\BibliotekaKlasa.csproj|solutionrelative:1_sloj_podataka\\bibliotekaklasa\\klasepodataka\\modeli\\korisnikmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -149,10 +165,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C3333333-3333-3333-3333-333333333333}|3_SLOJ_SERVISA\\SEMP_REST_API\\SEMP_REST_API.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\3_sloj_servisa\\semp_rest_api\\ogranicenja\\ogranicenjeupisa.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C3333333-3333-3333-3333-333333333333}|3_SLOJ_SERVISA\\SEMP_REST_API\\SEMP_REST_API.csproj|solutionrelative:3_sloj_servisa\\semp_rest_api\\ogranicenja\\ogranicenjeupisa.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2222222-2222-2222-2222-222222222222}|2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovnaLogika.csproj|c:\\users\\petar papic\\desktop\\pera\\semp\\2_sloj_poslovne_logike\\poslovnalogika\\poslovniprocessi\\poslovniproces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2222222-2222-2222-2222-222222222222}|2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovnaLogika.csproj|solutionrelative:2_sloj_poslovne_logike\\poslovnalogika\\poslovniprocessi\\poslovniproces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -182,384 +194,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EpizodaController.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\EpizodaController.cs",
-              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\EpizodaController.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\EpizodaController.cs",
-              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\EpizodaController.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAiwIUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:40:27.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Program.cs",
-              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Program.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Program.cs",
-              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADQAAAARAAAAAAAAAA==",
+              "Title": "ZarnController.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\ZarnController.cs",
+              "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\ZarnController.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\ZarnController.cs",
+              "RelativeToolTip": "3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\ZarnController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwCEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T18:32:31.384Z",
+              "WhenOpened": "2026-06-09T10:18:12.617Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "PoslovniProces.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovniProcessi\\PoslovniProces.cs",
+              "RelativeDocumentMoniker": "2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovniProcessi\\PoslovniProces.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovniProcessi\\PoslovniProces.cs",
+              "RelativeToolTip": "2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovniProcessi\\PoslovniProces.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAkwH8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T11:31:15.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ViewModeli.cs",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\ViewModels\\ViewModeli.cs",
               "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\ViewModels\\ViewModeli.cs",
               "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\ViewModels\\ViewModeli.cs",
               "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\ViewModels\\ViewModeli.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAIwDQAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAA0wDMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-02T16:18:37.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EntityModeli.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\ModeliEF\\EntityModeli.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\ModeliEF\\EntityModeli.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\ModeliEF\\EntityModeli.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\ModeliEF\\EntityModeli.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA9wB4AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T16:11:01.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TopEpizodaModel.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\TopEpizodaModel.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\TopEpizodaModel.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\TopEpizodaModel.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\TopEpizodaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T15:22:29.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EpizodaModel.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\EpizodaModel.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\EpizodaModel.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\EpizodaModel.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\EpizodaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Title": "EpizodaController.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\EpizodaController.cs",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\EpizodaController.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\EpizodaController.cs",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\EpizodaController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAswEsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T15:22:41.433Z",
+              "WhenOpened": "2026-05-25T11:40:27.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Dodaj.cshtml",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Dodaj.cshtml",
               "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Dodaj.cshtml",
               "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Dodaj.cshtml",
               "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Dodaj.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-02T15:13:02.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EpizodaSpRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaSpRepo.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaSpRepo.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaSpRepo.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaSpRepo.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAIwFsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:29:07.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "KorisnikRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\KorisnikRepo.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\KorisnikRepo.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\KorisnikRepo.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\KorisnikRepo.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T19:53:28.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EpizodaRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaRepo.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaRepo.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaRepo.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaRepo.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T19:52:22.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "OcenaRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\OcenaRepo.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\OcenaRepo.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\OcenaRepo.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\OcenaRepo.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwBUAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T19:54:44.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
-              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
-              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-27T18:36:50.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Program.cs",
-              "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\Program.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Program.cs",
-              "RelativeToolTip": "3_SLOJ_SERVISA\\SEMP_REST_API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T18:47:07.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Oceni.cshtml",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Oceni.cshtml",
-              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Oceni.cshtml",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Oceni.cshtml",
-              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Oceni.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-02T16:52:54.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PocetnaController.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\PocetnaController.cs",
-              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\PocetnaController.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\PocetnaController.cs",
-              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\PocetnaController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T16:51:27.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "OcenaController.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
-              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
-              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAAwNsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:41:38.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "NalogController.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\NalogController.cs",
-              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\NalogController.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\NalogController.cs",
-              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\NalogController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T16:50:47.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-06-02T16:50:36.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "XmlTopListeServis.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\Servisi\\XmlTopListeServis.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\Servisi\\XmlTopListeServis.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\Servisi\\XmlTopListeServis.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\Servisi\\XmlTopListeServis.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T16:04:05.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Index.cshtml",
-              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Index.cshtml",
-              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Index.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAuwB0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-02T15:13:00.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 3,
               "Title": "Izmeni.cshtml",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Izmeni.cshtml",
               "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Izmeni.cshtml",
               "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Izmeni.cshtml",
               "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Izmeni.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-02T15:12:58.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\KontekstEF\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\KontekstEF\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\KontekstEF\\AppDbContext.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\KontekstEF\\AppDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAcwBUAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Index.cshtml",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Index.cshtml",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Epizoda\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwCoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-02T15:13:00.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EpizodaSpRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaSpRepo.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaSpRepo.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaSpRepo.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaSpRepo.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAADwv2MAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T16:10:16.253Z",
+              "WhenOpened": "2026-05-25T11:29:07.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\appsettings.json",
-              "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\appsettings.json",
-              "RelativeToolTip": "3_SLOJ_SERVISA\\SEMP_REST_API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-02T16:16:20.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "FunkcijeLozinke.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\PomocneFunkcije\\FunkcijeLozinke.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\PomocneFunkcije\\FunkcijeLozinke.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\PomocneFunkcije\\FunkcijeLozinke.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\PomocneFunkcije\\FunkcijeLozinke.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "EpizodaRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaRepo.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaRepo.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaRepo.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\EpizodaRepo.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwHEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T16:15:02.883Z",
+              "WhenOpened": "2026-05-29T19:52:22.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ogranicenjeUpisa.json",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
-              "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
-              "RelativeToolTip": "3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-25T18:50:08.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "EpizodeController.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\EpizodeController.cs",
-              "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\EpizodeController.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\EpizodeController.cs",
-              "RelativeToolTip": "3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\EpizodeController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAYwFwAAAB+AAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "ZarnRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\ZarnRepo.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\ZarnRepo.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\ZarnRepo.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\ZarnRepo.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAywCAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:34:43.977Z",
+              "WhenOpened": "2026-06-09T10:05:27.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "BaseRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\BaseRepo.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\BaseRepo.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\BaseRepo.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\BaseRepo.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBIAAAABAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "ZarnModel.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\ZarnModel.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\ZarnModel.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\ZarnModel.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\ZarnModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T19:50:39.054Z",
+              "WhenOpened": "2026-06-09T10:04:22.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "EpizodaOcenaEFRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\RepozitorijumiEF\\EpizodaOcenaEFRepo.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\RepozitorijumiEF\\EpizodaOcenaEFRepo.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\RepozitorijumiEF\\EpizodaOcenaEFRepo.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\RepozitorijumiEF\\EpizodaOcenaEFRepo.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAqwA0AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T15:19:57.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "KorisnikModel.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\KorisnikModel.cs",
-              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\KorisnikModel.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\KorisnikModel.cs",
-              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\KorisnikModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T15:47:35.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 11,
               "Title": "OcenaModel.cs",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\OcenaModel.cs",
               "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\OcenaModel.cs",
@@ -572,7 +350,271 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TopEpizodaModel.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\TopEpizodaModel.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\TopEpizodaModel.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\TopEpizodaModel.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\TopEpizodaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:22:29.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EntityModeli.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\ModeliEF\\EntityModeli.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\ModeliEF\\EntityModeli.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\ModeliEF\\EntityModeli.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\ModeliEF\\EntityModeli.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA9wB4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T16:11:01.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Program.cs",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Program.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Program.cs",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:32:31.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EpizodaModel.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\EpizodaModel.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\EpizodaModel.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\EpizodaModel.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\EpizodaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:22:41.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "KorisnikRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\KorisnikRepo.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\KorisnikRepo.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\KorisnikRepo.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\KorisnikRepo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T19:53:28.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OcenaRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\OcenaRepo.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\OcenaRepo.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\OcenaRepo.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\OcenaRepo.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwBUAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T19:54:44.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-27T18:36:50.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Program.cs",
+              "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\Program.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Program.cs",
+              "RelativeToolTip": "3_SLOJ_SERVISA\\SEMP_REST_API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:47:07.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Oceni.cshtml",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Oceni.cshtml",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Oceni.cshtml",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Oceni.cshtml",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Oceni.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-02T16:52:54.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PocetnaController.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\PocetnaController.cs",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\PocetnaController.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\PocetnaController.cs",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\PocetnaController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T16:51:27.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OcenaController.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\OcenaController.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAAwNsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T11:41:38.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NalogController.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\NalogController.cs",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\NalogController.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\NalogController.cs",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Controllers\\NalogController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T16:50:47.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-02T16:50:36.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "XmlTopListeServis.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\Servisi\\XmlTopListeServis.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\Servisi\\XmlTopListeServis.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\Servisi\\XmlTopListeServis.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\Servisi\\XmlTopListeServis.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T16:04:05.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\KontekstEF\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\KontekstEF\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\KontekstEF\\AppDbContext.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\KontekstEF\\AppDbContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwBUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T16:10:16.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\appsettings.json",
+              "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\appsettings.json",
+              "RelativeToolTip": "3_SLOJ_SERVISA\\SEMP_REST_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-02T16:16:20.33Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 30,
+              "Title": "FunkcijeLozinke.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\PomocneFunkcije\\FunkcijeLozinke.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\PomocneFunkcije\\FunkcijeLozinke.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\PomocneFunkcije\\FunkcijeLozinke.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\PomocneFunkcije\\FunkcijeLozinke.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T16:15:02.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ogranicenjeUpisa.json",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
+              "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
+              "RelativeToolTip": "3_SLOJ_SERVISA\\SEMP_REST_API\\podaci\\ogranicenjeUpisa.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-25T18:50:08.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EpizodeController.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\EpizodeController.cs",
+              "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\EpizodeController.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\EpizodeController.cs",
+              "RelativeToolTip": "3_SLOJ_SERVISA\\SEMP_REST_API\\Controllers\\EpizodeController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAYwFwAAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T11:34:43.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BaseRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\BaseRepo.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\BaseRepo.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\BaseRepo.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Repozitorijumi\\BaseRepo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T19:50:39.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EpizodaOcenaEFRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\RepozitorijumiEF\\EpizodaOcenaEFRepo.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\RepozitorijumiEF\\EpizodaOcenaEFRepo.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\RepozitorijumiEF\\EpizodaOcenaEFRepo.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodatakaEF\\RepozitorijumiEF\\EpizodaOcenaEFRepo.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAqwA0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:19:57.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "KorisnikModel.cs",
+              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\KorisnikModel.cs",
+              "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\KorisnikModel.cs",
+              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\KorisnikModel.cs",
+              "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\KlasePodataka\\Modeli\\KorisnikModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:47:35.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "BaznaKonekcijaNova.cs",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\BaznaKonekcijaNova.cs",
               "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\BaznaKonekcijaNova.cs",
@@ -580,12 +622,11 @@
               "RelativeToolTip": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\BaznaKonekcijaNova.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAkwBUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T19:48:03.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T19:48:03.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "KonekcijaKlasa.cs",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\KonekcijaKlasa.cs",
               "RelativeDocumentMoniker": "1_SLOJ_PODATAKA\\BibliotekaKlasa\\TehnoloskeKlase\\KonekcijaKlasa.cs",
@@ -597,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "Stampa.cshtml",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Stampa.cshtml",
               "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Views\\Ocena\\Stampa.cshtml",
@@ -609,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\Properties\\launchSettings.json",
@@ -621,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\appsettings.json",
               "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\appsettings.json",
@@ -633,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "4_PREZENTACIONI_SLOJ\\SEMP_Aplikacija\\Properties\\launchSettings.json",
@@ -645,7 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "ogranicenjeUpisa.json",
               "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\3_SLOJ_SERVISA\\SEMP_REST_API\\Ogranicenja\\ogranicenjeUpisa.json",
               "RelativeDocumentMoniker": "3_SLOJ_SERVISA\\SEMP_REST_API\\Ogranicenja\\ogranicenjeUpisa.json",
@@ -654,18 +695,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-05-25T11:39:45.432Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "PoslovniProces.cs",
-              "DocumentMoniker": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovniProcessi\\PoslovniProces.cs",
-              "RelativeDocumentMoniker": "2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovniProcessi\\PoslovniProces.cs",
-              "ToolTip": "C:\\Users\\Petar Papic\\Desktop\\Pera\\SEMP\\2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovniProcessi\\PoslovniProces.cs",
-              "RelativeToolTip": "2_SLOJ_POSLOVNE_LOGIKE\\PoslovnaLogika\\PoslovniProcessi\\PoslovniProces.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAkwKQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:31:15.312Z"
             }
           ]
         }

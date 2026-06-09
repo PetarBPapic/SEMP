@@ -125,6 +125,18 @@ namespace PoslovnaLogika.PoslovniProcessi
         }
 
         // ============================================================
+        // Zanri
+        // ============================================================
+
+        public List<ZarnModel> DajSveZarne()
+        {
+            var konekcijaObjekat = new KonekcijaKlasa(_konekcioniString);
+            var zarnRepo = new ZarnRepo(konekcijaObjekat);
+            return zarnRepo.DajSve();
+        }
+
+
+        // ============================================================
         // EPIZODE
         // ============================================================
 

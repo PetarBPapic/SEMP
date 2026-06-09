@@ -47,8 +47,10 @@ namespace SEMP_Aplikacija.ViewModels
         public int KreiraoId { get; set; }
 
         // Za dropdown u View-u
+        // Za dropdown u View-u
         public List<SelectListItem> ZarnLista { get; set; } = new();
-    }
+        public string ZarnNaziv { get; set; } = string.Empty;
+}
 
     public class ZarnViewModel
     {

@@ -31,7 +31,8 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
                     Naslov = citac.GetString(1),
                     Opis = citac.GetString(2),
                     DatumPremijere = citac.GetDateTime(3),
-                    KreiraoId = citac.GetInt32(4)
+                    KreiraoId = citac.GetInt32(4),
+                    ZarnIdz = citac.GetInt32(5)
                 });
             }
 
@@ -57,7 +58,8 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
                     Naslov = citac.GetString(1),
                     Opis = citac.GetString(2),
                     DatumPremijere = citac.GetDateTime(3),
-                    KreiraoId = citac.GetInt32(4)
+                    KreiraoId = citac.GetInt32(4),
+                    ZarnIdz = citac.GetInt32(5)
                 };
             }
 
@@ -75,7 +77,7 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
             komanda.Parameters.AddWithValue("@Opis", epizodaModelObjekat.Opis);
             komanda.Parameters.AddWithValue("@DatumPremijere", epizodaModelObjekat.DatumPremijere);
             komanda.Parameters.AddWithValue("@KreiraoId", epizodaModelObjekat.KreiraoId);
-            komanda.Parameters.AddWithValue("@ZarnIdz", epizodaModelObjekat.KreiraoId);
+            komanda.Parameters.AddWithValue("@ZarnIdz", epizodaModelObjekat.ZarnIdz);
             komanda.ExecuteNonQuery();
 
             _konekcijaObjekat.ZatvoriKonekciju();

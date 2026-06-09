@@ -2,12 +2,10 @@
 @{
     ViewData["Title"] = "Upravljanje epizodama";
 }
-
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h2 class="text-warning">⚙ Upravljanje epizodama</h2>
     <a asp-action="Dodaj" class="btn btn-warning">+ Dodaj novu epizodu</a>
 </div>
-
 <div class="table-responsive">
     <table class="table table-dark table-striped table-hover">
         <thead class="table-warning text-dark">
@@ -15,8 +13,8 @@
                 <th>ID</th>
                 <th>Naslov</th>
                 <th>Opis</th>
+                <th>Žanr</th>
                 <th>Datum premijere</th>
-                <th>ZarnIdz</th>
                 <th>Akcije</th>
             </tr>
         </thead>
@@ -27,7 +25,7 @@
                     <td>@ep.Id</td>
                     <td>@ep.Naslov</td>
                     <td>@(ep.Opis.Length > 60 ? ep.Opis.Substring(0, 60) + "..." : ep.Opis)</td>
-                    <td>@ep.ZarnIdz</td>
+                    <td>@ep.ZarnNaziv</td>
                     <td>@ep.DatumPremijere.ToString("dd.MM.yyyy")</td>
                     <td>
                         <a asp-action="Izmeni" asp-route-id="@ep.Id" class="btn btn-sm btn-primary me-1">Izmeni</a>

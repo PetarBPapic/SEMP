@@ -13,8 +13,8 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
         public void Dodaj(EpizodaModel epizodaModelObjekat)
         {
             _konekcijaObjekat.OtvoriKonekciju();
-            string upit = @"INSERT INTO Epizode (Naslov, Opis, DatumPremijere, KreiraoId)
-                            VALUES (@Naslov, @Opis, @DatumPremijere, @KreiraoId)";
+            string upit = @"INSERT INTO Epizode (Naslov, Opis, DatumPremijere, KreiraoId, ZarnIdz)
+                            VALUES (@Naslov, @Opis, @DatumPremijere, @KreiraoId, @ZarnIdz)";
             using var komanda = new SqlCommand(upit, _konekcijaObjekat.DajKonekciju());
             komanda.Parameters.AddWithValue("@Naslov", epizodaModelObjekat.Naslov);
             komanda.Parameters.AddWithValue("@Opis", epizodaModelObjekat.Opis);
@@ -29,14 +29,14 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
         {
             _konekcijaObjekat.OtvoriKonekciju();
             string upit = @"UPDATE Epizode SET 
-                            Naslov=@Naslov, Opis=@Opis, DatumPremijere=@DatumPremijere
+                            Naslov=@Naslov, Opis=@Opis, DatumPremijere=@DatumPremijere, ZarnIdz=@ZarnIdz
                             WHERE Id=@Id";
             using var komanda = new SqlCommand(upit, _konekcijaObjekat.DajKonekciju());
             komanda.Parameters.AddWithValue("@Naslov", epizodaModelObjekat.Naslov);
             komanda.Parameters.AddWithValue("@Opis", epizodaModelObjekat.Opis);
             komanda.Parameters.AddWithValue("@DatumPremijere", epizodaModelObjekat.DatumPremijere);
-            komanda.Parameters.AddWithValue("@Id", epizodaModelObjekat.Id);
             komanda.Parameters.AddWithValue("@ZarnIdz", epizodaModelObjekat.ZarnIdz);
+            komanda.Parameters.AddWithValue("@Id", epizodaModelObjekat.Id);
             komanda.ExecuteNonQuery();
             _konekcijaObjekat.ZatvoriKonekciju();
         }
@@ -51,11 +51,6 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
             _konekcijaObjekat.ZatvoriKonekciju();
         }
 
-        /// <summary>
-        /// Resetuje IDENTITY brojac tabele Epizode na najveci postojeci ID.
-        /// Na taj nacin sledeca dodata epizoda dobija prvi slobodan broj
-        /// umesto da nastavlja od poslednjeg ikad koriscenog ID-a.
-        /// </summary>
         public void ResetuiIdBrojac()
         {
             _konekcijaObjekat.OtvoriKonekciju();
@@ -85,7 +80,7 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
                     Opis = citac.GetString(2),
                     DatumPremijere = citac.GetDateTime(3),
                     KreiraoId = citac.GetInt32(4),
-                    ZarnIdz = citac.GetInt32(4)
+                    ZarnIdz = citac.GetInt32(5)
                 });
             }
             _konekcijaObjekat.ZatvoriKonekciju();
@@ -95,7 +90,7 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
         public EpizodaModel? DajPoId(int id)
         {
             _konekcijaObjekat.OtvoriKonekciju();
-            string upit = "SELECT Id, Naslov, Opis, DatumPremijere, KreiraoId FROM Epizode WHERE Id=@Id";
+            string upit = "SELECT Id, Naslov, Opis, DatumPremijere, KreiraoId, ZarnIdz FROM Epizode WHERE Id=@Id";
             using var komanda = new SqlCommand(upit, _konekcijaObjekat.DajKonekciju());
             komanda.Parameters.AddWithValue("@Id", id);
             using var citac = komanda.ExecuteReader();
@@ -108,7 +103,8 @@ namespace BibliotekaKlasa.KlasePodataka.Repozitorijumi
                     Naslov = citac.GetString(1),
                     Opis = citac.GetString(2),
                     DatumPremijere = citac.GetDateTime(3),
-                    KreiraoId = citac.GetInt32(4)
+                    KreiraoId = citac.GetInt32(4),
+                    ZarnIdz = citac.GetInt32(5)
                 };
             }
             _konekcijaObjekat.ZatvoriKonekciju();

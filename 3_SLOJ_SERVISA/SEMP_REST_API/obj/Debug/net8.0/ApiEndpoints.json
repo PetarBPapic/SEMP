@@ -117,5 +117,15 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SEMP_REST_API.Controllers.ZarnController",
+    "Method": "DajSve",
+    "RelativePath": "api/Zarn",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]
